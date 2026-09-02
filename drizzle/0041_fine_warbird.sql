@@ -1,0 +1,1 @@
+ALTER TABLE `railing_options` ADD `colorVariant` varchar(32);

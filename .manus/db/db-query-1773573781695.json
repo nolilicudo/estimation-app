@@ -1,0 +1,9 @@
+{
+  "query": "\nINSERT INTO site_settings (settingKey, settingValue, label, description, category)\nVALUES \n  ('subfloor_sheet_price', '45.00', 'Subfloor Sheet Price ($)', 'Price per sheet of subfloor material (4×8 sheet = 32 sqft). Cost = sheets × price.', 'pricing'),\n  ('subfloor_sheet_bonus', '1', 'Subfloor Bonus Sheets (>5)', 'Extra sheets added when total sheets exceed 5 (accounts for cuts/waste on larger decks).', 'pricing')\nON DUPLICATE KEY UPDATE settingValue = settingValue;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (settingKey, settingValue, label, description, category)\nVALUES \n  ('subfloor_sheet_price', '45.00', 'Subfloor Sheet Price ($)', 'Price per sheet of subfloor material (4×8 sheet = 32 sqft). Cost = sheets × price.', 'pricing'),\n  ('subfloor_sheet_bonus', '1', 'Subfloor Bonus Sheets (>5)', 'Extra sheets added when total sheets exceed 5 (accounts for cuts/waste on larger decks).', 'pricing')\nON DUPLICATE KEY UPDATE settingValue = settingValue;\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 398
+}

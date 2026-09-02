@@ -1,0 +1,25 @@
+{
+  "query": "SELECT id, slug, name FROM collections ORDER BY id; SELECT id, slug, name, pricePerSqft FROM framing_options ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name FROM collections ORDER BY id; SELECT id, slug, name, pricePerSqft FROM framing_options ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "rainier",
+      "name": "Updated Rainier"
+    },
+    {
+      "id": "2",
+      "slug": "appalachian",
+      "name": "Appalachian Collection"
+    }
+  ],
+  "messages": [
+    "id\tslug\tname\tpricePerSqft",
+    "1\tpt-lumber-standard\tStandard Deck Framing\t18.00",
+    "2\tpt-lumber-premium\tPressure-Treated Lumber (Premium)\t24.00",
+    "3\tsteel-framing\tSteel Framing\t32.00"
+  ],
+  "stdout": "id\tslug\tname\n1\trainier\tUpdated Rainier\n2\tappalachian\tAppalachian Collection\nid\tslug\tname\tpricePerSqft\n1\tpt-lumber-standard\tStandard Deck Framing\t18.00\n2\tpt-lumber-premium\tPressure-Treated Lumber (Premium)\t24.00\n3\tsteel-framing\tSteel Framing\t32.00\n",
+  "stderr": "",
+  "execution_time_ms": 484
+}

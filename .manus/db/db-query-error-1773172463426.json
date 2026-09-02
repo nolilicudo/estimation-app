@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO site_settings (settingKey, settingValue, label, description, category, sortOrder) VALUES ('show_itemized_pricing', '1', 'Show Itemized Pricing', 'When enabled, the estimate shows a full line-item breakdown. When disabled, only the grand total is shown.', 'pricing', 10) ON DUPLICATE KEY UPDATE settingValue = settingValue;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute INSERT INTO site_settings (settingKey, settingValue, label, description, category, sortOrder) VALUES ('show_itemized_pricing', '1', 'Show Itemized Pricing', 'When enabled, the estimate shows a full line-item breakdown. When disabled, only the grand total is shown.', 'pricing', 10) ON DUPLICATE KEY UPDATE settingValue = settingValue;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'sortOrder' in 'field list'"
+  ]
+}

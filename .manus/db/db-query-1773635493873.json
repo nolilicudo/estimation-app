@@ -1,0 +1,45 @@
+{
+  "query": "SELECT settingKey, settingValue, label FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%stair%' OR settingKey LIKE '%engineer%' OR settingKey LIKE '%permit%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue, label FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%stair%' OR settingKey LIKE '%engineer%' OR settingKey LIKE '%permit%'",
+  "rows": [
+    {
+      "settingKey": "stair_tread_price",
+      "settingValue": "14.00",
+      "label": "Stair Tread Price (per sqft)"
+    },
+    {
+      "settingKey": "stair_riser_price",
+      "settingValue": "12.00",
+      "label": "Stair Riser Price (per linear ft)"
+    },
+    {
+      "settingKey": "permit_cost",
+      "settingValue": "250",
+      "label": "Permit Assistance Cost"
+    },
+    {
+      "settingKey": "subfloor_rate",
+      "settingValue": "8.00",
+      "label": "Subfloor Rate ($/sqft)"
+    },
+    {
+      "settingKey": "subfloor_minimum",
+      "settingValue": "500.00",
+      "label": "Subfloor Minimum ($)"
+    },
+    {
+      "settingKey": "subfloor_sheet_price",
+      "settingValue": "45.00",
+      "label": "Subfloor Sheet Price ($)"
+    },
+    {
+      "settingKey": "subfloor_sheet_bonus",
+      "settingValue": "1",
+      "label": "Subfloor Bonus Sheets (>5)"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\tlabel\nstair_tread_price\t14.00\tStair Tread Price (per sqft)\nstair_riser_price\t12.00\tStair Riser Price (per linear ft)\npermit_cost\t250\tPermit Assistance Cost\nsubfloor_rate\t8.00\tSubfloor Rate ($/sqft)\nsubfloor_minimum\t500.00\tSubfloor Minimum ($)\nsubfloor_sheet_price\t45.00\tSubfloor Sheet Price ($)\nsubfloor_sheet_bonus\t1\tSubfloor Bonus Sheets (>5)\n",
+  "stderr": "",
+  "execution_time_ms": 357
+}

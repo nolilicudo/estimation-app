@@ -1,0 +1,22 @@
+CREATE TABLE `initial_consult_settings` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`default_realtor_fee_pct` decimal(5,2) NOT NULL DEFAULT '6.00',
+	`default_relocation_cost_pct` decimal(5,2) NOT NULL DEFAULT '1.00',
+	`default_closing_cost_pct` decimal(5,2) NOT NULL DEFAULT '2.00',
+	`default_property_tax_rate_pct` decimal(5,2) NOT NULL DEFAULT '1.20',
+	`default_replacement_insurance_annual` decimal(10,2) NOT NULL DEFAULT '1800.00',
+	`default_appreciation_rate_pct` decimal(5,2) NOT NULL DEFAULT '4.00',
+	`default_loan_term_years` int NOT NULL DEFAULT 15,
+	`lock_realtor_fee` tinyint NOT NULL DEFAULT 0,
+	`lock_relocation_cost` tinyint NOT NULL DEFAULT 0,
+	`lock_closing_cost` tinyint NOT NULL DEFAULT 0,
+	`lock_property_tax_rate` tinyint NOT NULL DEFAULT 0,
+	`lock_replacement_insurance` tinyint NOT NULL DEFAULT 0,
+	`lock_appreciation_rate` tinyint NOT NULL DEFAULT 0,
+	`lock_loan_term` tinyint NOT NULL DEFAULT 0,
+	`company_tagline` varchar(255) DEFAULT 'Stay & Build vs. Sell & Move',
+	`appreciation_years` varchar(64) DEFAULT '1,3,5,10,20',
+	`updated_at` bigint NOT NULL DEFAULT 0,
+	`updated_by` int,
+	CONSTRAINT `initial_consult_settings_id` PRIMARY KEY(`id`)
+);

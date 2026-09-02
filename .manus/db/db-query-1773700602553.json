@@ -1,0 +1,82 @@
+{
+  "query": "\n-- Update rain_escape_options to populate new cost fields from existing price fields\nUPDATE rain_escape_options SET\n  systemMaterialCostPerSqft = ROUND(systemPricePerSqft * 0.55, 2),\n  systemInstallCostPerSqft = ROUND(laborPricePerSqft * 0.55, 2),\n  gutterMaterialCostPerLf = ROUND(gutterPricePerLinearFt * 0.55, 2),\n  gutterInstallCostPerLf = ROUND(gutterPricePerLinearFt * 0.10, 2),\n  marginPct = 35.00\nWHERE systemPricePerSqft > 0 OR gutterPricePerLinearFt > 0;\n\n-- Update railing_options installCostPerLf (default to 40% of costPerLf as labor estimate)\nUPDATE railing_options SET\n  installCostPerLf = ROUND(costPerLf * 0.40, 2)\nWHERE costPerLf > 0;\n\n-- Recalculate railing pricePerLf from (costPerLf + installCostPerLf) / (1 - marginPct/100)\nUPDATE railing_options SET\n  pricePerLf = ROUND((costPerLf + installCostPerLf) / (1 - marginPct / 100), 2)\nWHERE marginPct > 0;\n\n-- Update facade_options installCostPerSqft (default to 40% of costPerSqft as labor estimate)\nUPDATE facade_options SET\n  installCostPerSqft = ROUND(costPerSqft * 0.40, 2)\nWHERE costPerSqft > 0 AND installCostPerSqft = 0;\n\n-- Recalculate facade pricePerSqft from (costPerSqft + installCostPerSqft) / (1 - marginPct/100)\nUPDATE facade_options SET\n  pricePerSqft = ROUND((costPerSqft + installCostPerSqft) / (1 - marginPct / 100), 2)\nWHERE marginPct > 0 AND (costPerSqft > 0 OR installCostPerSqft > 0);\n\nSELECT 'railing' as tbl, name, costPerLf, installCostPerLf, marginPct, pricePerLf FROM railing_options\nUNION ALL\nSELECT 'facade' as tbl, name, costPerSqft, installCostPerSqft, marginPct, pricePerSqft FROM facade_options;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \n-- Update rain_escape_options to populate new cost fields from existing price fields\nUPDATE rain_escape_options SET\n  systemMaterialCostPerSqft = ROUND(systemPricePerSqft * 0.55, 2),\n  systemInstallCostPerSqft = ROUND(laborPricePerSqft * 0.55, 2),\n  gutterMaterialCostPerLf = ROUND(gutterPricePerLinearFt * 0.55, 2),\n  gutterInstallCostPerLf = ROUND(gutterPricePerLinearFt * 0.10, 2),\n  marginPct = 35.00\nWHERE systemPricePerSqft > 0 OR gutterPricePerLinearFt > 0;\n\n-- Update railing_options installCostPerLf (default to 40% of costPerLf as labor estimate)\nUPDATE railing_options SET\n  installCostPerLf = ROUND(costPerLf * 0.40, 2)\nWHERE costPerLf > 0;\n\n-- Recalculate railing pricePerLf from (costPerLf + installCostPerLf) / (1 - marginPct/100)\nUPDATE railing_options SET\n  pricePerLf = ROUND((costPerLf + installCostPerLf) / (1 - marginPct / 100), 2)\nWHERE marginPct > 0;\n\n-- Update facade_options installCostPerSqft (default to 40% of costPerSqft as labor estimate)\nUPDATE facade_options SET\n  installCostPerSqft = ROUND(costPerSqft * 0.40, 2)\nWHERE costPerSqft > 0 AND installCostPerSqft = 0;\n\n-- Recalculate facade pricePerSqft from (costPerSqft + installCostPerSqft) / (1 - marginPct/100)\nUPDATE facade_options SET\n  pricePerSqft = ROUND((costPerSqft + installCostPerSqft) / (1 - marginPct / 100), 2)\nWHERE marginPct > 0 AND (costPerSqft > 0 OR installCostPerSqft > 0);\n\nSELECT 'railing' as tbl, name, costPerLf, installCostPerLf, marginPct, pricePerLf FROM railing_options\nUNION ALL\nSELECT 'facade' as tbl, name, costPerSqft, installCostPerSqft, marginPct, pricePerSqft FROM facade_options;\n",
+  "rows": [
+    {
+      "tbl": "railing",
+      "name": "Wire Railing",
+      "costPerLf": "75.00",
+      "installCostPerLf": "30.00",
+      "marginPct": "35.00",
+      "pricePerLf": "161.54"
+    },
+    {
+      "tbl": "railing",
+      "name": "Custom Welded Railing — Horizontal Bars",
+      "costPerLf": "65.00",
+      "installCostPerLf": "26.00",
+      "marginPct": "40.00",
+      "pricePerLf": "151.67"
+    },
+    {
+      "tbl": "railing",
+      "name": "Custom Welded Railing — Vertical Bars",
+      "costPerLf": "65.00",
+      "installCostPerLf": "26.00",
+      "marginPct": "40.00",
+      "pricePerLf": "151.67"
+    },
+    {
+      "tbl": "facade",
+      "name": "Stucco",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "13.00"
+    },
+    {
+      "tbl": "facade",
+      "name": "Vinyl Siding",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "7.00"
+    },
+    {
+      "tbl": "facade",
+      "name": "Hardie Board (Fiber Cement)",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "12.00"
+    },
+    {
+      "tbl": "facade",
+      "name": "Brick Veneer",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "22.00"
+    },
+    {
+      "tbl": "facade",
+      "name": "Stone Veneer",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "28.00"
+    },
+    {
+      "tbl": "facade",
+      "name": "No Facade Work Needed",
+      "costPerLf": "0.00",
+      "installCostPerLf": "0.00",
+      "marginPct": "35.00",
+      "pricePerLf": "0.00"
+    }
+  ],
+  "messages": [],
+  "stdout": "tbl\tname\tcostPerLf\tinstallCostPerLf\tmarginPct\tpricePerLf\nrailing\tWire Railing\t75.00\t30.00\t35.00\t161.54\nrailing\tCustom Welded Railing — Horizontal Bars\t65.00\t26.00\t40.00\t151.67\nrailing\tCustom Welded Railing — Vertical Bars\t65.00\t26.00\t40.00\t151.67\nfacade\tStucco\t0.00\t0.00\t35.00\t13.00\nfacade\tVinyl Siding\t0.00\t0.00\t35.00\t7.00\nfacade\tHardie Board (Fiber Cement)\t0.00\t0.00\t35.00\t12.00\nfacade\tBrick Veneer\t0.00\t0.00\t35.00\t22.00\nfacade\tStone Veneer\t0.00\t0.00\t35.00\t28.00\nfacade\tNo Facade Work Needed\t0.00\t0.00\t35.00\t0.00\n",
+  "stderr": "",
+  "execution_time_ms": 723
+}

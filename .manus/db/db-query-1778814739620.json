@@ -1,0 +1,42 @@
+{
+  "query": "SELECT id, name, pricingType, renderingType, flatCost, projectTypes FROM design_package_items WHERE pricingType = 'rendering';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, name, pricingType, renderingType, flatCost, projectTypes FROM design_package_items WHERE pricingType = 'rendering';",
+  "rows": [
+    {
+      "id": "10",
+      "name": "3D Rendering — Small Bathroom",
+      "pricingType": "rendering",
+      "renderingType": "small_bathroom",
+      "flatCost": "500.00",
+      "projectTypes": "all"
+    },
+    {
+      "id": "11",
+      "name": "3D Rendering — Large Bathroom / Living Room",
+      "pricingType": "rendering",
+      "renderingType": "large_bathroom",
+      "flatCost": "650.00",
+      "projectTypes": "all"
+    },
+    {
+      "id": "12",
+      "name": "3D Rendering — Kitchen",
+      "pricingType": "rendering",
+      "renderingType": "kitchen",
+      "flatCost": "750.00",
+      "projectTypes": "all"
+    },
+    {
+      "id": "13",
+      "name": "3D Rendering — Exterior",
+      "pricingType": "rendering",
+      "renderingType": "exterior",
+      "flatCost": "600.00",
+      "projectTypes": "all"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tpricingType\trenderingType\tflatCost\tprojectTypes\n10\t3D Rendering — Small Bathroom\trendering\tsmall_bathroom\t500.00\tall\n11\t3D Rendering — Large Bathroom / Living Room\trendering\tlarge_bathroom\t650.00\tall\n12\t3D Rendering — Kitchen\trendering\tkitchen\t750.00\tall\n13\t3D Rendering — Exterior\trendering\texterior\t600.00\tall\n",
+  "stderr": "",
+  "execution_time_ms": 281
+}

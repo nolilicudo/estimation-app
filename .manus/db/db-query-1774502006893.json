@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE calculator_users SET role = 'super_admin', managerId = NULL, permissions = '{\"viewAdminPanel\":true,\"editPricing\":true,\"viewAllEstimates\":true,\"viewTeamEstimates\":true,\"viewOwnEstimates\":true,\"viewAllContracts\":true,\"viewTeamContracts\":true,\"viewOwnContracts\":true,\"manageUsers\":true,\"editVerbiage\":true,\"editCollections\":true,\"editColors\":true,\"editEdges\":true,\"editAccessories\":true,\"editLabor\":true,\"editDelivery\":true,\"editSettings\":true,\"viewOrders\":true,\"manageOrders\":true}' WHERE email = 'tanner@designyourprice.com';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute UPDATE calculator_users SET role = 'super_admin', managerId = NULL, permissions = '{\"viewAdminPanel\":true,\"editPricing\":true,\"viewAllEstimates\":true,\"viewTeamEstimates\":true,\"viewOwnEstimates\":true,\"viewAllContracts\":true,\"viewTeamContracts\":true,\"viewOwnContracts\":true,\"manageUsers\":true,\"editVerbiage\":true,\"editCollections\":true,\"editColors\":true,\"editEdges\":true,\"editAccessories\":true,\"editLabor\":true,\"editDelivery\":true,\"editSettings\":true,\"viewOrders\":true,\"manageOrders\":true}' WHERE email = 'tanner@designyourprice.com';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 366
+}

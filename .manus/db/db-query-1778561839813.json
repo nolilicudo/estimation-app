@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE dp_free_features ADD COLUMN projectTypes varchar(255) NOT NULL DEFAULT 'all';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute ALTER TABLE dp_free_features ADD COLUMN projectTypes varchar(255) NOT NULL DEFAULT 'all';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 438
+}

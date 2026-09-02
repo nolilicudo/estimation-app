@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO site_settings (settingKey, settingValue, label, description, category) VALUES ('handrail_removal_rate', '15', 'Handrail Removal & Reset Rate ($/LF)', 'Flat rate per linear foot for removing and resetting an existing handrail on a new deck. No margin is applied to this rate.', 'railing') ON DUPLICATE KEY UPDATE settingValue = settingValue;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute INSERT INTO site_settings (settingKey, settingValue, label, description, category) VALUES ('handrail_removal_rate', '15', 'Handrail Removal & Reset Rate ($/LF)', 'Flat rate per linear foot for removing and resetting an existing handrail on a new deck. No margin is applied to this rate.', 'railing') ON DUPLICATE KEY UPDATE settingValue = settingValue;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 394
+}

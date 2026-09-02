@@ -1,0 +1,26 @@
+{
+  "query": "SELECT slug, COUNT(*) as cnt FROM edge_options GROUP BY slug HAVING cnt > 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT slug, COUNT(*) as cnt FROM edge_options GROUP BY slug HAVING cnt > 1;",
+  "rows": [
+    {
+      "slug": "aluminium-edge",
+      "cnt": "2"
+    },
+    {
+      "slug": "standard-edge-board",
+      "cnt": "2"
+    },
+    {
+      "slug": "corner-edge-board",
+      "cnt": "2"
+    },
+    {
+      "slug": "bullnose-standard",
+      "cnt": "2"
+    }
+  ],
+  "messages": [],
+  "stdout": "slug\tcnt\naluminium-edge\t2\nstandard-edge-board\t2\ncorner-edge-board\t2\nbullnose-standard\t2\n",
+  "stderr": "",
+  "execution_time_ms": 388
+}

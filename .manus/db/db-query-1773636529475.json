@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE site_settings SET label = 'Subfloor Bonus Sheet (add 1 extra sheet)', description = 'When enabled, adds 1 bonus sheet to the subfloor calculation (sqft ÷ 32 + 1)' WHERE settingKey = 'subfloor_sheet_bonus';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute UPDATE site_settings SET label = 'Subfloor Bonus Sheet (add 1 extra sheet)', description = 'When enabled, adds 1 bonus sheet to the subfloor calculation (sqft ÷ 32 + 1)' WHERE settingKey = 'subfloor_sheet_bonus';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 357
+}

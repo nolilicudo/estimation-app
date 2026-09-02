@@ -1,0 +1,1 @@
+ALTER TABLE `facade_options` ADD `minimumPrice` decimal(10,2) DEFAULT '0' NOT NULL;

@@ -1,0 +1,8 @@
+{
+  "query": "\nINSERT INTO site_settings (`key`, `value`, `description`) VALUES\n  ('lift_threshold_1_depth_in', '10', 'Beam depth (inches) at or above which 1 material lift is suggested (e.g. 10 = any 2x10+ or LVL 10\"+)'),\n  ('lift_threshold_2_depth_in', '14', 'Beam depth (inches) at or above which a 2nd material lift is suggested'),\n  ('lift_cost_1', '450', 'Price charged for 1 material lift'),\n  ('lift_cost_2', '800', 'Price charged for 2 material lifts (replaces lift_cost_1, not additive)')\nON DUPLICATE KEY UPDATE\n  value = VALUES(value),\n  description = VALUES(description);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (`key`, `value`, `description`) VALUES\n  ('lift_threshold_1_depth_in', '10', 'Beam depth (inches) at or above which 1 material lift is suggested (e.g. 10 = any 2x10+ or LVL 10\"+)'),\n  ('lift_threshold_2_depth_in', '14', 'Beam depth (inches) at or above which a 2nd material lift is suggested'),\n  ('lift_cost_1', '450', 'Price charged for 1 material lift'),\n  ('lift_cost_2', '800', 'Price charged for 2 material lifts (replaces lift_cost_1, not additive)')\nON DUPLICATE KEY UPDATE\n  value = VALUES(value),\n  description = VALUES(description);\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'key' in 'field list'"
+  ]
+}

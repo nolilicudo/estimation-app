@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE site_settings SET description = 'Base price per step for stairs up to 4ft wide. Minimum stair width is 3ft.' WHERE settingKey = 'stair_base_price';\nUPDATE site_settings SET description = 'Additional cost per lineal foot for each foot of stair width beyond 4ft.' WHERE settingKey = 'stair_per_lf_over_4ft';\nUPDATE site_settings SET description = 'Cost for engineer letter required when framing is selected. Mandatory for second-story decks (8ft+).' WHERE settingKey = 'engineer_letter_cost';\nUPDATE site_settings SET description = 'Permit cost when framing is selected. Mandatory for second-story decks (8ft+).' WHERE settingKey = 'permit_cost_framing';\nUPDATE site_settings SET description = 'Price per sheet of subfloor material (4x8 = 32 sqft per sheet).' WHERE settingKey = 'subfloor_sheet_price';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute UPDATE site_settings SET description = 'Base price per step for stairs up to 4ft wide. Minimum stair width is 3ft.' WHERE settingKey = 'stair_base_price';\nUPDATE site_settings SET description = 'Additional cost per lineal foot for each foot of stair width beyond 4ft.' WHERE settingKey = 'stair_per_lf_over_4ft';\nUPDATE site_settings SET description = 'Cost for engineer letter required when framing is selected. Mandatory for second-story decks (8ft+).' WHERE settingKey = 'engineer_letter_cost';\nUPDATE site_settings SET description = 'Permit cost when framing is selected. Mandatory for second-story decks (8ft+).' WHERE settingKey = 'permit_cost_framing';\nUPDATE site_settings SET description = 'Price per sheet of subfloor material (4x8 = 32 sqft per sheet).' WHERE settingKey = 'subfloor_sheet_price';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 602
+}

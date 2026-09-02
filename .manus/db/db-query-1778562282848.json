@@ -1,0 +1,115 @@
+{
+  "query": "SELECT id, name, pricingType, renderingType, isDefaultEnabled FROM design_package_items ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, name, pricingType, renderingType, isDefaultEnabled FROM design_package_items ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Architectural Engineering",
+      "pricingType": "sqft",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "2",
+      "name": "Structural Engineering",
+      "pricingType": "sqft",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "60002",
+      "name": "Exterior Drainage Plan",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "60001",
+      "name": "Space Planning",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "3",
+      "name": "Material Selections",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "4",
+      "name": "Cabinet Drawings / Built-ins",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "5",
+      "name": "Manual J",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "6",
+      "name": "REScheck",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "7",
+      "name": "Gas Schematic & Sizing",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "8",
+      "name": "Electrical Schematic",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "9",
+      "name": "Plumbing Schematic",
+      "pricingType": "flat",
+      "renderingType": "NULL",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "10",
+      "name": "3D Rendering — Small Bathroom",
+      "pricingType": "rendering",
+      "renderingType": "small_bathroom",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "11",
+      "name": "3D Rendering — Large Bathroom / Area",
+      "pricingType": "rendering",
+      "renderingType": "large_bathroom",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "12",
+      "name": "3D Rendering — Kitchen",
+      "pricingType": "rendering",
+      "renderingType": "kitchen",
+      "isDefaultEnabled": "1"
+    },
+    {
+      "id": "13",
+      "name": "3D Rendering — Exterior",
+      "pricingType": "rendering",
+      "renderingType": "exterior",
+      "isDefaultEnabled": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tpricingType\trenderingType\tisDefaultEnabled\n1\tArchitectural Engineering\tsqft\tNULL\t1\n2\tStructural Engineering\tsqft\tNULL\t1\n60002\tExterior Drainage Plan\tflat\tNULL\t1\n60001\tSpace Planning\tflat\tNULL\t1\n3\tMaterial Selections\tflat\tNULL\t1\n4\tCabinet Drawings / Built-ins\tflat\tNULL\t1\n5\tManual J\tflat\tNULL\t1\n6\tREScheck\tflat\tNULL\t1\n7\tGas Schematic & Sizing\tflat\tNULL\t1\n8\tElectrical Schematic\tflat\tNULL\t1\n9\tPlumbing Schematic\tflat\tNULL\t1\n10\t3D Rendering — Small Bathroom\trendering\tsmall_bathroom\t1\n11\t3D Rendering — Large Bathroom / Area\trendering\tlarge_bathroom\t1\n12\t3D Rendering — Kitchen\trendering\tkitchen\t1\n13\t3D Rendering — Exterior\trendering\texterior\t1\n",
+  "stderr": "",
+  "execution_time_ms": 273
+}

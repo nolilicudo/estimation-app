@@ -1,0 +1,1 @@
+ALTER TABLE `design_package_items` ADD `isDefaultEnabled` int DEFAULT 1 NOT NULL;

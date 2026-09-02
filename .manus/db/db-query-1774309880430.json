@@ -1,0 +1,26 @@
+{
+  "query": "SELECT settingKey, settingValue FROM site_settings WHERE settingKey IN ('discount_name', 'discount2_name', 'discount_enabled', 'discount2_enabled');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue FROM site_settings WHERE settingKey IN ('discount_name', 'discount2_name', 'discount_enabled', 'discount2_enabled');",
+  "rows": [
+    {
+      "settingKey": "discount_name",
+      "settingValue": "Early Bird Discount"
+    },
+    {
+      "settingKey": "discount2_name",
+      "settingValue": "Same Day Discount"
+    },
+    {
+      "settingKey": "discount_enabled",
+      "settingValue": "1"
+    },
+    {
+      "settingKey": "discount2_enabled",
+      "settingValue": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\ndiscount_name\tEarly Bird Discount\ndiscount2_name\tSame Day Discount\ndiscount_enabled\t1\ndiscount2_enabled\t1\n",
+  "stderr": "",
+  "execution_time_ms": 349
+}

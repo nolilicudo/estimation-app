@@ -1,0 +1,50 @@
+{
+  "query": "\n-- Insert aluminum soffit option\nINSERT INTO soffit_materials (slug, name, description, materialCostPerSqft, installCostPerSqft, marginPct, pricePerSqft, laborPricePerSqft, sortOrder, isActive)\nVALUES ('aluminum', 'Aluminum Soffit', 'Standard aluminum soffit panels for underside deck finishing', 3.50, 2.50, 35.00, 9.23, 2.50, 40, 1)\nON DUPLICATE KEY UPDATE name = VALUES(name);\n\n-- Update existing soffit items to have materialCostPerSqft and installCostPerSqft\n-- (migrate from old pricePerSqft + laborPricePerSqft to new cost model)\nUPDATE soffit_materials SET\n  materialCostPerSqft = CASE\n    WHEN slug = 'tng-wood' THEN 4.50\n    WHEN slug = 'tng-pvc' THEN 5.50\n    WHEN slug = 'standard-aluminum' THEN 2.80\n    WHEN slug = 'painted-cement-board' THEN 3.20\n    ELSE materialCostPerSqft\n  END,\n  installCostPerSqft = CASE\n    WHEN slug = 'tng-wood' THEN 3.00\n    WHEN slug = 'tng-pvc' THEN 3.00\n    WHEN slug = 'standard-aluminum' THEN 2.00\n    WHEN slug = 'painted-cement-board' THEN 2.50\n    ELSE installCostPerSqft\n  END\nWHERE slug IN ('tng-wood', 'tng-pvc', 'standard-aluminum', 'painted-cement-board');\n\n-- Recalculate pricePerSqft for all soffit items using (material + install) / (1 - margin/100)\nUPDATE soffit_materials SET\n  pricePerSqft = ROUND((materialCostPerSqft + installCostPerSqft) / (1 - marginPct / 100), 2)\nWHERE materialCostPerSqft > 0 OR installCostPerSqft > 0;\n\nSELECT slug, name, materialCostPerSqft, installCostPerSqft, marginPct, pricePerSqft FROM soffit_materials ORDER BY sortOrder;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \n-- Insert aluminum soffit option\nINSERT INTO soffit_materials (slug, name, description, materialCostPerSqft, installCostPerSqft, marginPct, pricePerSqft, laborPricePerSqft, sortOrder, isActive)\nVALUES ('aluminum', 'Aluminum Soffit', 'Standard aluminum soffit panels for underside deck finishing', 3.50, 2.50, 35.00, 9.23, 2.50, 40, 1)\nON DUPLICATE KEY UPDATE name = VALUES(name);\n\n-- Update existing soffit items to have materialCostPerSqft and installCostPerSqft\n-- (migrate from old pricePerSqft + laborPricePerSqft to new cost model)\nUPDATE soffit_materials SET\n  materialCostPerSqft = CASE\n    WHEN slug = 'tng-wood' THEN 4.50\n    WHEN slug = 'tng-pvc' THEN 5.50\n    WHEN slug = 'standard-aluminum' THEN 2.80\n    WHEN slug = 'painted-cement-board' THEN 3.20\n    ELSE materialCostPerSqft\n  END,\n  installCostPerSqft = CASE\n    WHEN slug = 'tng-wood' THEN 3.00\n    WHEN slug = 'tng-pvc' THEN 3.00\n    WHEN slug = 'standard-aluminum' THEN 2.00\n    WHEN slug = 'painted-cement-board' THEN 2.50\n    ELSE installCostPerSqft\n  END\nWHERE slug IN ('tng-wood', 'tng-pvc', 'standard-aluminum', 'painted-cement-board');\n\n-- Recalculate pricePerSqft for all soffit items using (material + install) / (1 - margin/100)\nUPDATE soffit_materials SET\n  pricePerSqft = ROUND((materialCostPerSqft + installCostPerSqft) / (1 - marginPct / 100), 2)\nWHERE materialCostPerSqft > 0 OR installCostPerSqft > 0;\n\nSELECT slug, name, materialCostPerSqft, installCostPerSqft, marginPct, pricePerSqft FROM soffit_materials ORDER BY sortOrder;\n",
+  "rows": [
+    {
+      "slug": "tongue-groove-wood",
+      "name": "Tongue & Groove Wood",
+      "materialCostPerSqft": "0.00",
+      "installCostPerSqft": "0.00",
+      "marginPct": "35.00",
+      "pricePerSqft": "6.50"
+    },
+    {
+      "slug": "tongue-groove-pvc",
+      "name": "Tongue & Groove PVC",
+      "materialCostPerSqft": "0.00",
+      "installCostPerSqft": "0.00",
+      "marginPct": "35.00",
+      "pricePerSqft": "7.25"
+    },
+    {
+      "slug": "standard-aluminum",
+      "name": "Standard Aluminum Soffit",
+      "materialCostPerSqft": "2.80",
+      "installCostPerSqft": "2.00",
+      "marginPct": "35.00",
+      "pricePerSqft": "7.38"
+    },
+    {
+      "slug": "painted-cement-board",
+      "name": "Painted Cement Board",
+      "materialCostPerSqft": "3.20",
+      "installCostPerSqft": "2.50",
+      "marginPct": "35.00",
+      "pricePerSqft": "8.77"
+    },
+    {
+      "slug": "aluminum",
+      "name": "Aluminum Soffit",
+      "materialCostPerSqft": "3.50",
+      "installCostPerSqft": "2.50",
+      "marginPct": "35.00",
+      "pricePerSqft": "9.23"
+    }
+  ],
+  "messages": [],
+  "stdout": "slug\tname\tmaterialCostPerSqft\tinstallCostPerSqft\tmarginPct\tpricePerSqft\ntongue-groove-wood\tTongue & Groove Wood\t0.00\t0.00\t35.00\t6.50\ntongue-groove-pvc\tTongue & Groove PVC\t0.00\t0.00\t35.00\t7.25\nstandard-aluminum\tStandard Aluminum Soffit\t2.80\t2.00\t35.00\t7.38\npainted-cement-board\tPainted Cement Board\t3.20\t2.50\t35.00\t8.77\naluminum\tAluminum Soffit\t3.50\t2.50\t35.00\t9.23\n",
+  "stderr": "",
+  "execution_time_ms": 831
+}

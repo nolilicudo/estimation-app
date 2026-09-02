@@ -1,0 +1,52 @@
+{
+  "query": "SELECT id, slug, name, isOptional FROM accessories ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, isOptional FROM accessories ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "grooved-clips",
+      "name": "Grooved Clips & Fasteners",
+      "isOptional": "0"
+    },
+    {
+      "id": "2",
+      "slug": "starter-clip",
+      "name": "Starter Clip & Fastener",
+      "isOptional": "0"
+    },
+    {
+      "id": "3",
+      "slug": "edge-clip",
+      "name": "Edge Clip & Fastener",
+      "isOptional": "0"
+    },
+    {
+      "id": "4",
+      "slug": "joist-tape",
+      "name": "Joist Tape",
+      "isOptional": "0"
+    },
+    {
+      "id": "5",
+      "slug": "epdm-membrane",
+      "name": "EPDM Membrane",
+      "isOptional": "0"
+    },
+    {
+      "id": "6",
+      "slug": "diamond-blade",
+      "name": "Diamond Blade",
+      "isOptional": "1"
+    },
+    {
+      "id": "7",
+      "slug": "sanding-pad",
+      "name": "Stone Sanding Pad",
+      "isOptional": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\tisOptional\n1\tgrooved-clips\tGrooved Clips & Fasteners\t0\n2\tstarter-clip\tStarter Clip & Fastener\t0\n3\tedge-clip\tEdge Clip & Fastener\t0\n4\tjoist-tape\tJoist Tape\t0\n5\tepdm-membrane\tEPDM Membrane\t0\n6\tdiamond-blade\tDiamond Blade\t1\n7\tsanding-pad\tStone Sanding Pad\t1\n",
+  "stderr": "",
+  "execution_time_ms": 361
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `design_package_items` MODIFY COLUMN `renderingType` varchar(50);

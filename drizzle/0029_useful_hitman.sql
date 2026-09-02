@@ -1,0 +1,1 @@
+ALTER TABLE `accessories` ADD `showInScope` int DEFAULT 0 NOT NULL;

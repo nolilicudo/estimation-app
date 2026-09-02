@@ -1,0 +1,12 @@
+{
+  "query": "SELECT settingKey, LEFT(settingValue, 100) as val, category FROM site_settings WHERE settingKey = 'contract_text' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, LEFT(settingValue, 100) as val, category FROM site_settings WHERE settingKey = 'contract_text' LIMIT 5;",
+  "rows": [],
+  "messages": [
+    "contract_text\tMATERIAL PURCHASE AGREEMENT",
+    "This Material Purchase Agreement (\"Agreement\") is entered into as of th\tverbiage"
+  ],
+  "stdout": "settingKey\tval\tcategory\ncontract_text\tMATERIAL PURCHASE AGREEMENT\n\nThis Material Purchase Agreement (\"Agreement\") is entered into as of th\tverbiage\n",
+  "stderr": "",
+  "execution_time_ms": 534
+}

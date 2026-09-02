@@ -1,0 +1,20 @@
+CREATE TABLE `comparison_materials` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(64) NOT NULL,
+	`name` varchar(128) NOT NULL,
+	`description` text,
+	`materialCostPerSqft` decimal(10,2) NOT NULL,
+	`laborCostPerSqft` decimal(10,2) NOT NULL,
+	`annualMaintenanceCostPerSqft` decimal(10,2) NOT NULL,
+	`lifespanYears` int NOT NULL,
+	`warrantyYears` int NOT NULL DEFAULT 0,
+	`colorHex` varchar(7) NOT NULL DEFAULT '#888888',
+	`pros` json,
+	`cons` json,
+	`sortOrder` int NOT NULL DEFAULT 0,
+	`isActive` int NOT NULL DEFAULT 1,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `comparison_materials_id` PRIMARY KEY(`id`),
+	CONSTRAINT `comparison_materials_slug_unique` UNIQUE(`slug`)
+);

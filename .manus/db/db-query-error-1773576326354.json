@@ -1,0 +1,8 @@
+{
+  "query": "\nINSERT INTO site_settings (`key`, `value`, `label`, `category`, `sortOrder`)\nVALUES\n  ('lumber_sales_tax_pct', '8.35', 'Lumber Sales Tax %', 'framing', 70),\n  ('lumber_delivery_fee', '150.00', 'Lumber Delivery Fee ($)', 'framing', 71)\nON DUPLICATE KEY UPDATE `value` = VALUES(`value`);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (`key`, `value`, `label`, `category`, `sortOrder`)\nVALUES\n  ('lumber_sales_tax_pct', '8.35', 'Lumber Sales Tax %', 'framing', 70),\n  ('lumber_delivery_fee', '150.00', 'Lumber Delivery Fee ($)', 'framing', 71)\nON DUPLICATE KEY UPDATE `value` = VALUES(`value`);\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'key' in 'field list'"
+  ]
+}

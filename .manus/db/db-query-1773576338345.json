@@ -1,0 +1,9 @@
+{
+  "query": "\nINSERT INTO site_settings (settingKey, settingValue, label, category)\nVALUES\n  ('lumber_sales_tax_pct', '8.35', 'Lumber Sales Tax %', 'framing'),\n  ('lumber_delivery_fee', '150.00', 'Lumber Delivery Fee ($)', 'framing')\nON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (settingKey, settingValue, label, category)\nVALUES\n  ('lumber_sales_tax_pct', '8.35', 'Lumber Sales Tax %', 'framing'),\n  ('lumber_delivery_fee', '150.00', 'Lumber Delivery Fee ($)', 'framing')\nON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 364
+}

@@ -1,0 +1,24 @@
+{
+  "query": "SELECT id, slug, name, gutterPricePerLinearFt, systemPricePerSqft, laborPricePerSqft FROM rain_escape_options; SELECT id, slug, name, pricePerSqft, laborPricePerSqft FROM soffit_materials;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, gutterPricePerLinearFt, systemPricePerSqft, laborPricePerSqft FROM rain_escape_options; SELECT id, slug, name, pricePerSqft, laborPricePerSqft FROM soffit_materials;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "standard",
+      "name": "Trex RainEscape + Concealed Gutter",
+      "gutterPricePerLinearFt": "18.00",
+      "systemPricePerSqft": "4.50",
+      "laborPricePerSqft": "3.50"
+    }
+  ],
+  "messages": [
+    "id\tslug\tname\tpricePerSqft\tlaborPricePerSqft",
+    "1\ttongue-groove-wood\tTongue & Groove Wood\t6.50\t4.00",
+    "2\ttongue-groove-pvc\tTongue & Groove PVC\t7.25\t3.50",
+    "3\tstandard-aluminum\tStandard Aluminum Soffit\t4.75\t2.75",
+    "4\tpainted-cement-board\tPainted Cement Board\t8.00\t5.00"
+  ],
+  "stdout": "id\tslug\tname\tgutterPricePerLinearFt\tsystemPricePerSqft\tlaborPricePerSqft\n1\tstandard\tTrex RainEscape + Concealed Gutter\t18.00\t4.50\t3.50\nid\tslug\tname\tpricePerSqft\tlaborPricePerSqft\n1\ttongue-groove-wood\tTongue & Groove Wood\t6.50\t4.00\n2\ttongue-groove-pvc\tTongue & Groove PVC\t7.25\t3.50\n3\tstandard-aluminum\tStandard Aluminum Soffit\t4.75\t2.75\n4\tpainted-cement-board\tPainted Cement Board\t8.00\t5.00\n",
+  "stderr": "",
+  "execution_time_ms": 411
+}

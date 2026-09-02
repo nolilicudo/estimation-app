@@ -1,0 +1,1 @@
+ALTER TABLE `dp_questionnaire_questions` MODIFY COLUMN `options` text;

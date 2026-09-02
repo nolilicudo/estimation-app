@@ -1,0 +1,150 @@
+{
+  "query": "SELECT id, name, email, phone, createdAt FROM brochure_requests ORDER BY createdAt DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, name, email, phone, createdAt FROM brochure_requests ORDER BY createdAt DESC;",
+  "rows": [
+    {
+      "id": "510001",
+      "name": "Nancy Reagan",
+      "email": "nancyre2021@gmail.com",
+      "phone": "831-521-0711",
+      "createdAt": "2026-03-14 23:53:31"
+    },
+    {
+      "id": "480001",
+      "name": "Amy Gifford",
+      "email": "amykgiffod@gmail.com",
+      "phone": "801-725-0558",
+      "createdAt": "2026-03-14 23:36:29"
+    },
+    {
+      "id": "450001",
+      "name": "Britney Park",
+      "email": "bmj2u2@gmail.com",
+      "phone": "801-259-2882",
+      "createdAt": "2026-03-14 23:04:02"
+    },
+    {
+      "id": "420002",
+      "name": "Everett Larson",
+      "email": "everettandamanda@gmail.com",
+      "phone": "4357640725",
+      "createdAt": "2026-03-14 22:05:37"
+    },
+    {
+      "id": "420001",
+      "name": "Kevin Anthony",
+      "email": "kevin7anthony@gmail.com",
+      "phone": "801-602-9047",
+      "createdAt": "2026-03-14 21:59:04"
+    },
+    {
+      "id": "390001",
+      "name": "Cortney Hoffman",
+      "email": "cortneyhoffman16@gmail.com",
+      "phone": "801-857-1497",
+      "createdAt": "2026-03-14 21:31:20"
+    },
+    {
+      "id": "360001",
+      "name": "Josh Erickson",
+      "email": "josheboy123@gmail.com",
+      "phone": "801-361-4323",
+      "createdAt": "2026-03-14 19:57:04"
+    },
+    {
+      "id": "330001",
+      "name": "Melanie Stuckie",
+      "email": "melaniestuckie@yahoo.com",
+      "phone": "949-633-2205",
+      "createdAt": "2026-03-14 19:45:49"
+    },
+    {
+      "id": "300001",
+      "name": "Mike Jenkins",
+      "email": "mjjenkins8@msn.com",
+      "phone": "801-318-5582",
+      "createdAt": "2026-03-14 19:33:32"
+    },
+    {
+      "id": "270001",
+      "name": "Keena Williams",
+      "email": "keenaskids@gmail.com",
+      "phone": "4258292886",
+      "createdAt": "2026-03-14 18:51:40"
+    },
+    {
+      "id": "240001",
+      "name": "Cecile Pryor",
+      "email": "cecilepryor@yahoo.com",
+      "phone": "7327547780",
+      "createdAt": "2026-03-14 18:12:24"
+    },
+    {
+      "id": "210001",
+      "name": "Joe Reid",
+      "email": "jnareid24@gmail.com",
+      "phone": "4806521948",
+      "createdAt": "2026-03-14 17:59:40"
+    },
+    {
+      "id": "180001",
+      "name": "Jay Gunnell",
+      "email": "jlgunnell@outlook.com",
+      "phone": "8017965441",
+      "createdAt": "2026-03-14 17:45:58"
+    },
+    {
+      "id": "150001",
+      "name": "Michael Tutton",
+      "email": "tahititut@gmail.com",
+      "phone": "801-380-0695",
+      "createdAt": "2026-03-14 01:35:15"
+    },
+    {
+      "id": "120002",
+      "name": "John Allen",
+      "email": "johnc.allen1955@gmail.com",
+      "phone": "801-600-0800",
+      "createdAt": "2026-03-14 00:16:32"
+    },
+    {
+      "id": "120001",
+      "name": "Chuck Irwin",
+      "email": "cmcbrewster@yahoo.com",
+      "phone": "801-362-9532",
+      "createdAt": "2026-03-14 00:07:40"
+    },
+    {
+      "id": "90001",
+      "name": "Tracy Ross",
+      "email": "btrconstruction12@gmail.com",
+      "phone": "8013721514",
+      "createdAt": "2026-03-13 20:38:49"
+    },
+    {
+      "id": "60001",
+      "name": "Josh Smith",
+      "email": "jlmasmith@hotmail.com",
+      "phone": "NULL",
+      "createdAt": "2026-03-13 19:51:17"
+    },
+    {
+      "id": "30001",
+      "name": "Sheryl & Geryl",
+      "email": "jns9696@gmail.com",
+      "phone": "8013192458",
+      "createdAt": "2026-03-13 18:46:23"
+    },
+    {
+      "id": "1",
+      "name": "Tanner Durfee",
+      "email": "tanner@designyourprice.com",
+      "phone": "3852688828",
+      "createdAt": "2026-03-13 11:22:23"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\tphone\tcreatedAt\n510001\tNancy Reagan\tnancyre2021@gmail.com\t831-521-0711\t2026-03-14 23:53:31\n480001\tAmy Gifford\tamykgiffod@gmail.com\t801-725-0558\t2026-03-14 23:36:29\n450001\tBritney Park\tbmj2u2@gmail.com\t801-259-2882\t2026-03-14 23:04:02\n420002\tEverett Larson\teverettandamanda@gmail.com\t4357640725\t2026-03-14 22:05:37\n420001\tKevin Anthony\tkevin7anthony@gmail.com\t801-602-9047\t2026-03-14 21:59:04\n390001\tCortney Hoffman\tcortneyhoffman16@gmail.com\t801-857-1497\t2026-03-14 21:31:20\n360001\tJosh Erickson\tjosheboy123@gmail.com\t801-361-4323\t2026-03-14 19:57:04\n330001\tMelanie Stuckie\tmelaniestuckie@yahoo.com\t949-633-2205\t2026-03-14 19:45:49\n300001\tMike Jenkins\tmjjenkins8@msn.com\t801-318-5582\t2026-03-14 19:33:32\n270001\tKeena Williams\tkeenaskids@gmail.com\t4258292886\t2026-03-14 18:51:40\n240001\tCecile Pryor\tcecilepryor@yahoo.com\t7327547780\t2026-03-14 18:12:24\n210001\tJoe Reid\tjnareid24@gmail.com\t4806521948\t2026-03-14 17:59:40\n180001\tJay Gunnell\tjlgunnell@outlook.com\t8017965441\t2026-03-14 17:45:58\n150001\tMichael Tutton\ttahititut@gmail.com\t801-380-0695\t2026-03-14 01:35:15\n120002\tJohn Allen\tjohnc.allen1955@gmail.com\t801-600-0800\t2026-03-14 00:16:32\n120001\tChuck Irwin\tcmcbrewster@yahoo.com\t801-362-9532\t2026-03-14 00:07:40\n90001\tTracy Ross\tbtrconstruction12@gmail.com\t8013721514\t2026-03-13 20:38:49\n60001\tJosh Smith\tjlmasmith@hotmail.com\tNULL\t2026-03-13 19:51:17\n30001\tSheryl & Geryl\tjns9696@gmail.com\t8013192458\t2026-03-13 18:46:23\n1\tTanner Durfee\ttanner@designyourprice.com\t3852688828\t2026-03-13 11:22:23\n",
+  "stderr": "",
+  "execution_time_ms": 471
+}

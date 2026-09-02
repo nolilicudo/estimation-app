@@ -1,0 +1,70 @@
+{
+  "query": "SELECT settingKey, settingValue, label, category FROM site_settings WHERE settingKey LIKE '%discount%' OR settingKey LIKE '%utah%' ORDER BY settingKey;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue, label, category FROM site_settings WHERE settingKey LIKE '%discount%' OR settingKey LIKE '%utah%' ORDER BY settingKey;",
+  "rows": [
+    {
+      "settingKey": "discount_amount",
+      "settingValue": "5",
+      "label": "Discount Amount",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_enabled",
+      "settingValue": "1",
+      "label": "Discount Enabled",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_name",
+      "settingValue": "Early Bird Discount",
+      "label": "Discount Name",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_type",
+      "settingValue": "percent",
+      "label": "Discount Type",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount2_amount",
+      "settingValue": "3",
+      "label": "Discount 2 Amount",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount2_enabled",
+      "settingValue": "0",
+      "label": "Enable Discount Button 2",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount2_name",
+      "settingValue": "Seasonal Discount",
+      "label": "Discount 2 Name",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount2_type",
+      "settingValue": "percent",
+      "label": "Discount 2 Type",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "utah_markup_enabled",
+      "settingValue": "0",
+      "label": "Enable Utah Installation Markup",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "utah_markup_percent",
+      "settingValue": "25",
+      "label": "Utah Installation Markup %",
+      "category": "pricing"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\tlabel\tcategory\ndiscount_amount\t5\tDiscount Amount\tpricing\ndiscount_enabled\t1\tDiscount Enabled\tpricing\ndiscount_name\tEarly Bird Discount\tDiscount Name\tpricing\ndiscount_type\tpercent\tDiscount Type\tpricing\ndiscount2_amount\t3\tDiscount 2 Amount\tpricing\ndiscount2_enabled\t0\tEnable Discount Button 2\tpricing\ndiscount2_name\tSeasonal Discount\tDiscount 2 Name\tpricing\ndiscount2_type\tpercent\tDiscount 2 Type\tpricing\nutah_markup_enabled\t0\tEnable Utah Installation Markup\tpricing\nutah_markup_percent\t25\tUtah Installation Markup %\tpricing\n",
+  "stderr": "",
+  "execution_time_ms": 400
+}

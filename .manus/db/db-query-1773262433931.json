@@ -1,0 +1,19 @@
+{
+  "query": "SELECT * FROM site_settings LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT * FROM site_settings LIMIT 1;",
+  "rows": [
+    {
+      "id": "1",
+      "settingKey": "tax_rate",
+      "settingValue": "0.0745",
+      "label": "Sales Tax Rate",
+      "description": "Utah sales tax rate (Orem)",
+      "category": "pricing",
+      "updatedAt": "2026-03-11 03:47:32"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsettingKey\tsettingValue\tlabel\tdescription\tcategory\tupdatedAt\n1\ttax_rate\t0.0745\tSales Tax Rate\tUtah sales tax rate (Orem)\tpricing\t2026-03-11 03:47:32\n",
+  "stderr": "",
+  "execution_time_ms": 364
+}

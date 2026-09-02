@@ -1,0 +1,138 @@
+{
+  "query": "DESCRIBE design_package_items;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute DESCRIBE design_package_items;",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "name",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "subtitle",
+      "Type": "varchar(500)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "",
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "varchar(500)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "",
+      "Extra": ""
+    },
+    {
+      "Field": "pricingType",
+      "Type": "varchar(20)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "flat",
+      "Extra": ""
+    },
+    {
+      "Field": "costPerSqft",
+      "Type": "decimal(10,4)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0.0000",
+      "Extra": ""
+    },
+    {
+      "Field": "flatCost",
+      "Type": "decimal(10,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    },
+    {
+      "Field": "markupPct",
+      "Type": "decimal(5,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "50.00",
+      "Extra": ""
+    },
+    {
+      "Field": "projectTypes",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "all",
+      "Extra": ""
+    },
+    {
+      "Field": "renderingType",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "isActive",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "sortOrder",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    },
+    {
+      "Field": "isDefaultEnabled",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "designHours",
+      "Type": "decimal(6,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0.00",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint\tNO\tPRI\tNULL\tauto_increment\nname\tvarchar(255)\tNO\t\tNULL\t\nsubtitle\tvarchar(500)\tYES\t\t\t\ndescription\tvarchar(500)\tYES\t\t\t\npricingType\tvarchar(20)\tNO\t\tflat\t\ncostPerSqft\tdecimal(10,4)\tNO\t\t0.0000\t\nflatCost\tdecimal(10,2)\tNO\t\t0.00\t\nmarkupPct\tdecimal(5,2)\tNO\t\t50.00\t\nprojectTypes\tvarchar(255)\tNO\t\tall\t\nrenderingType\tvarchar(50)\tYES\t\tNULL\t\nisActive\tint\tNO\t\t1\t\nsortOrder\tint\tNO\t\t0\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\nisDefaultEnabled\tint\tNO\t\t1\t\ndesignHours\tdecimal(6,2)\tNO\t\t0.00\t\n",
+  "stderr": "",
+  "execution_time_ms": 263
+}

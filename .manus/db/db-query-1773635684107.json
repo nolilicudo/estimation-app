@@ -1,0 +1,38 @@
+{
+  "query": "SELECT id, settingKey, settingValue, label, category FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%sheet%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, settingKey, settingValue, label, category FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%sheet%'",
+  "rows": [
+    {
+      "id": "150001",
+      "settingKey": "subfloor_rate",
+      "settingValue": "8.00",
+      "label": "Subfloor Rate ($/sqft)",
+      "category": "pricing"
+    },
+    {
+      "id": "150002",
+      "settingKey": "subfloor_minimum",
+      "settingValue": "500.00",
+      "label": "Subfloor Minimum ($)",
+      "category": "pricing"
+    },
+    {
+      "id": "180001",
+      "settingKey": "subfloor_sheet_price",
+      "settingValue": "45.00",
+      "label": "Subfloor Sheet Price ($)",
+      "category": "pricing"
+    },
+    {
+      "id": "180002",
+      "settingKey": "subfloor_sheet_bonus",
+      "settingValue": "1",
+      "label": "Subfloor Bonus Sheets (>5)",
+      "category": "pricing"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsettingKey\tsettingValue\tlabel\tcategory\n150001\tsubfloor_rate\t8.00\tSubfloor Rate ($/sqft)\tpricing\n150002\tsubfloor_minimum\t500.00\tSubfloor Minimum ($)\tpricing\n180001\tsubfloor_sheet_price\t45.00\tSubfloor Sheet Price ($)\tpricing\n180002\tsubfloor_sheet_bonus\t1\tSubfloor Bonus Sheets (>5)\tpricing\n",
+  "stderr": "",
+  "execution_time_ms": 381
+}

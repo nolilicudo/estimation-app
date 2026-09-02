@@ -1,0 +1,112 @@
+{
+  "query": "SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE()",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE()",
+  "rows": [
+    {
+      "table_name": "waterproofing_options"
+    },
+    {
+      "table_name": "users"
+    },
+    {
+      "table_name": "tile_sizes"
+    },
+    {
+      "table_name": "soffit_materials"
+    },
+    {
+      "table_name": "site_settings"
+    },
+    {
+      "table_name": "resin_surfaces"
+    },
+    {
+      "table_name": "resin_colors"
+    },
+    {
+      "table_name": "rain_escape_options"
+    },
+    {
+      "table_name": "railing_options"
+    },
+    {
+      "table_name": "product_settings"
+    },
+    {
+      "table_name": "orders"
+    },
+    {
+      "table_name": "lvl_beam_entries"
+    },
+    {
+      "table_name": "lumber_items"
+    },
+    {
+      "table_name": "labor_tiers"
+    },
+    {
+      "table_name": "labor_line_items"
+    },
+    {
+      "table_name": "joist_span_entries"
+    },
+    {
+      "table_name": "hot_tub_weights"
+    },
+    {
+      "table_name": "glulam_beam_entries"
+    },
+    {
+      "table_name": "framing_options"
+    },
+    {
+      "table_name": "footing_options"
+    },
+    {
+      "table_name": "facade_options"
+    },
+    {
+      "table_name": "edge_options"
+    },
+    {
+      "table_name": "duradek_colors"
+    },
+    {
+      "table_name": "demolition_options"
+    },
+    {
+      "table_name": "delivery_options"
+    },
+    {
+      "table_name": "corners_waste_rules"
+    },
+    {
+      "table_name": "concrete_options"
+    },
+    {
+      "table_name": "comparison_materials"
+    },
+    {
+      "table_name": "colors"
+    },
+    {
+      "table_name": "collections"
+    },
+    {
+      "table_name": "brochure_requests"
+    },
+    {
+      "table_name": "admin_users"
+    },
+    {
+      "table_name": "accessories"
+    },
+    {
+      "table_name": "__drizzle_migrations"
+    }
+  ],
+  "messages": [],
+  "stdout": "table_name\nwaterproofing_options\nusers\ntile_sizes\nsoffit_materials\nsite_settings\nresin_surfaces\nresin_colors\nrain_escape_options\nrailing_options\nproduct_settings\norders\nlvl_beam_entries\nlumber_items\nlabor_tiers\nlabor_line_items\njoist_span_entries\nhot_tub_weights\nglulam_beam_entries\nframing_options\nfooting_options\nfacade_options\nedge_options\nduradek_colors\ndemolition_options\ndelivery_options\ncorners_waste_rules\nconcrete_options\ncomparison_materials\ncolors\ncollections\nbrochure_requests\nadmin_users\naccessories\n__drizzle_migrations\n",
+  "stderr": "",
+  "execution_time_ms": 370
+}

@@ -1,0 +1,8 @@
+{
+  "query": "\n-- Step 1: Drop the old unique constraint on serviceType alone\nALTER TABLE contract_templates DROP INDEX serviceType;\n\n-- Step 2: Add projectType column with default 'default'\nALTER TABLE contract_templates ADD COLUMN projectType VARCHAR(64) NOT NULL DEFAULT 'default' AFTER serviceType;\n\n-- Step 3: Add new composite unique index on (serviceType, projectType)\nALTER TABLE contract_templates ADD UNIQUE INDEX serviceType_projectType_unique (serviceType, projectType);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \n-- Step 1: Drop the old unique constraint on serviceType alone\nALTER TABLE contract_templates DROP INDEX serviceType;\n\n-- Step 2: Add projectType column with default 'default'\nALTER TABLE contract_templates ADD COLUMN projectType VARCHAR(64) NOT NULL DEFAULT 'default' AFTER serviceType;\n\n-- Step 3: Add new composite unique index on (serviceType, projectType)\nALTER TABLE contract_templates ADD UNIQUE INDEX serviceType_projectType_unique (serviceType, projectType);\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1091 (42000) at line 3: index serviceType doesn't exist"
+  ]
+}

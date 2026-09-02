@@ -1,0 +1,40 @@
+{
+  "query": "SELECT name, homeDepotSku, costPrice, lastSyncedAt FROM lumber_items WHERE homeDepotSku IS NOT NULL ORDER BY lastSyncedAt DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT name, homeDepotSku, costPrice, lastSyncedAt FROM lumber_items WHERE homeDepotSku IS NOT NULL ORDER BY lastSyncedAt DESC LIMIT 5;",
+  "rows": [
+    {
+      "name": "2x6x8 PT #2 Ground Contact",
+      "homeDepotSku": "206931757",
+      "costPrice": "12.08",
+      "lastSyncedAt": "2026-03-27 16:09:44"
+    },
+    {
+      "name": "2x4x8 PT #2 Ground Contact",
+      "homeDepotSku": "206931753",
+      "costPrice": "7.58",
+      "lastSyncedAt": "2026-03-27 16:09:44"
+    },
+    {
+      "name": "2x4x12 PT #2 Ground Contact",
+      "homeDepotSku": "206931755",
+      "costPrice": "12.28",
+      "lastSyncedAt": "2026-03-27 16:09:44"
+    },
+    {
+      "name": "2x4x10 PT #2 Ground Contact",
+      "homeDepotSku": "206931754",
+      "costPrice": "9.58",
+      "lastSyncedAt": "2026-03-27 16:09:44"
+    },
+    {
+      "name": "2x6x10 PT #2 Ground Contact",
+      "homeDepotSku": "206931768",
+      "costPrice": "15.08",
+      "lastSyncedAt": "2026-03-27 16:09:44"
+    }
+  ],
+  "messages": [],
+  "stdout": "name\thomeDepotSku\tcostPrice\tlastSyncedAt\n2x6x8 PT #2 Ground Contact\t206931757\t12.08\t2026-03-27 16:09:44\n2x4x8 PT #2 Ground Contact\t206931753\t7.58\t2026-03-27 16:09:44\n2x4x12 PT #2 Ground Contact\t206931755\t12.28\t2026-03-27 16:09:44\n2x4x10 PT #2 Ground Contact\t206931754\t9.58\t2026-03-27 16:09:44\n2x6x10 PT #2 Ground Contact\t206931768\t15.08\t2026-03-27 16:09:44\n",
+  "stderr": "",
+  "execution_time_ms": 369
+}

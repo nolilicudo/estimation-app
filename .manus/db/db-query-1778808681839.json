@@ -1,0 +1,9 @@
+{
+  "query": "\nALTER TABLE contract_templates DROP INDEX contract_templates_serviceType_unique;\nALTER TABLE contract_templates ADD COLUMN projectType VARCHAR(64) NOT NULL DEFAULT 'default' AFTER serviceType;\nALTER TABLE contract_templates ADD UNIQUE INDEX serviceType_projectType_unique (serviceType, projectType);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nALTER TABLE contract_templates DROP INDEX contract_templates_serviceType_unique;\nALTER TABLE contract_templates ADD COLUMN projectType VARCHAR(64) NOT NULL DEFAULT 'default' AFTER serviceType;\nALTER TABLE contract_templates ADD UNIQUE INDEX serviceType_projectType_unique (serviceType, projectType);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 990
+}

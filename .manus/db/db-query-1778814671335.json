@@ -1,0 +1,98 @@
+{
+  "query": "DESCRIBE dp_feasibility_config;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute DESCRIBE dp_feasibility_config;",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "price",
+      "Type": "decimal(10,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "1000.00",
+      "Extra": ""
+    },
+    {
+      "Field": "repCommission",
+      "Type": "decimal(10,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "250.00",
+      "Extra": ""
+    },
+    {
+      "Field": "drafterCost",
+      "Type": "decimal(10,2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "500.00",
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "varchar(1000)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "A feasibility study determines if your addition is structurally and legally viable before committing to a full design package. Includes a site visit, preliminary drawings, and a written report.",
+      "Extra": ""
+    },
+    {
+      "Field": "tags",
+      "Type": "varchar(500)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "Zoning Review,Structural Assessment,Preliminary Drawings,Cost Validation",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    },
+    {
+      "Field": "name",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "Feasibility Study",
+      "Extra": ""
+    },
+    {
+      "Field": "sortOrder",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "isActive",
+      "Type": "tinyint(1)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint\tNO\tPRI\tNULL\tauto_increment\nprice\tdecimal(10,2)\tNO\t\t1000.00\t\nrepCommission\tdecimal(10,2)\tNO\t\t250.00\t\ndrafterCost\tdecimal(10,2)\tNO\t\t500.00\t\ndescription\tvarchar(1000)\tNO\t\tA feasibility study determines if your addition is structurally and legally viable before committing to a full design package. Includes a site visit, preliminary drawings, and a written report.\t\ntags\tvarchar(500)\tNO\t\tZoning Review,Structural Assessment,Preliminary Drawings,Cost Validation\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\nname\tvarchar(255)\tNO\t\tFeasibility Study\t\nsortOrder\tint\tNO\t\t0\t\nisActive\ttinyint(1)\tNO\t\t1\t\n",
+  "stderr": "",
+  "execution_time_ms": 278
+}

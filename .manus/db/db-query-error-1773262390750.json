@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO site_settings (id, `key`, value, label, description, category, sort_order, created_at, updated_at)\nVALUES (\n  CONCAT('setting-', UNIX_TIMESTAMP()),\n  'show_duradek',\n  '0',\n  'Show Duradek / Tiledek Tab',\n  'When enabled, the Duradek / Tiledek product tab is visible to customers on the calculator page.',\n  'products',\n  10,\n  NOW(),\n  NOW()\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute INSERT INTO site_settings (id, `key`, value, label, description, category, sort_order, created_at, updated_at)\nVALUES (\n  CONCAT('setting-', UNIX_TIMESTAMP()),\n  'show_duradek',\n  '0',\n  'Show Duradek / Tiledek Tab',\n  'When enabled, the Duradek / Tiledek product tab is visible to customers on the calculator page.',\n  'products',\n  10,\n  NOW(),\n  NOW()\n);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'key' in 'field list'"
+  ]
+}

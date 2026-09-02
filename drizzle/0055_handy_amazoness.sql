@@ -1,0 +1,1 @@
+ALTER TABLE `design_package_items` ADD `designHours` decimal(6,2) DEFAULT '0.00' NOT NULL;

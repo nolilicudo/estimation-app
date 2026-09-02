@@ -1,0 +1,64 @@
+{
+  "query": "\nSELECT id, slug, name, pricePerUnit, unit FROM concrete_options ORDER BY sortOrder;\nSELECT id, slug, name, pricePerSqft, minimumPrice, hasSeparateSqft FROM demolition_options ORDER BY sortOrder;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nSELECT id, slug, name, pricePerUnit, unit FROM concrete_options ORDER BY sortOrder;\nSELECT id, slug, name, pricePerSqft, minimumPrice, hasSeparateSqft FROM demolition_options ORDER BY sortOrder;\n",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "concrete-pad-4",
+      "name": "Concrete 4\" thick",
+      "pricePerUnit": "13.85",
+      "unit": "sqft"
+    },
+    {
+      "id": "30001",
+      "slug": "concrete-pad-6",
+      "name": "Concrete 6\" thick",
+      "pricePerUnit": "15.50",
+      "unit": "sqft"
+    },
+    {
+      "id": "2",
+      "slug": "concrete-steps",
+      "name": "Concrete Steps",
+      "pricePerUnit": "400.00",
+      "unit": "each"
+    },
+    {
+      "id": "3",
+      "slug": "concrete-walkway",
+      "name": "Concrete Walkway",
+      "pricePerUnit": "12.00",
+      "unit": "sqft"
+    },
+    {
+      "id": "4",
+      "slug": "stamped-concrete",
+      "name": "Stamped Concrete Pad",
+      "pricePerUnit": "18.00",
+      "unit": "sqft"
+    },
+    {
+      "id": "30002",
+      "slug": "concrete-pump",
+      "name": "Concrete Pump",
+      "pricePerUnit": "1000.00",
+      "unit": "each"
+    },
+    {
+      "id": "30003",
+      "slug": "concrete-buggy",
+      "name": "Concrete Buggy",
+      "pricePerUnit": "350.00",
+      "unit": "each"
+    }
+  ],
+  "messages": [
+    "id\tslug\tname\tpricePerSqft\tminimumPrice\thasSeparateSqft",
+    "1\tbasic-demo\tBasic Deck Removal\t5.00\t0.00\t0",
+    "2\tcomplex-demo\tComplex Deck Removal\t8.00\t0.00\t0",
+    "3\tConcrete Demo\tConcrete Removal\t7.00\t0.00\t1"
+  ],
+  "stdout": "id\tslug\tname\tpricePerUnit\tunit\n1\tconcrete-pad-4\tConcrete 4\" thick\t13.85\tsqft\n30001\tconcrete-pad-6\tConcrete 6\" thick\t15.50\tsqft\n2\tconcrete-steps\tConcrete Steps\t400.00\teach\n3\tconcrete-walkway\tConcrete Walkway\t12.00\tsqft\n4\tstamped-concrete\tStamped Concrete Pad\t18.00\tsqft\n30002\tconcrete-pump\tConcrete Pump\t1000.00\teach\n30003\tconcrete-buggy\tConcrete Buggy\t350.00\teach\nid\tslug\tname\tpricePerSqft\tminimumPrice\thasSeparateSqft\n1\tbasic-demo\tBasic Deck Removal\t5.00\t0.00\t0\n2\tcomplex-demo\tComplex Deck Removal\t8.00\t0.00\t0\n3\tConcrete Demo\tConcrete Removal\t7.00\t0.00\t1\n",
+  "stderr": "",
+  "execution_time_ms": 412
+}

@@ -1,0 +1,76 @@
+{
+  "query": "SELECT * FROM edge_options ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT * FROM edge_options ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "1",
+      "collectionSlug": "rainier",
+      "slug": "bullnose-standard",
+      "name": "Standard Bullnose Blocks",
+      "pricePerLinearFt": "24.98",
+      "sortOrder": "1",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    },
+    {
+      "id": "4",
+      "collectionSlug": "appalachian",
+      "slug": "standard-edge-board",
+      "name": "Standard Edge Boards",
+      "pricePerLinearFt": "10.99",
+      "sortOrder": "1",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    },
+    {
+      "id": "2",
+      "collectionSlug": "rainier",
+      "slug": "aluminium-edge",
+      "name": "Aluminium Edge Restraint",
+      "pricePerLinearFt": "5.00",
+      "sortOrder": "2",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    },
+    {
+      "id": "5",
+      "collectionSlug": "appalachian",
+      "slug": "corner-edge-board",
+      "name": "Corner Edge Boards",
+      "pricePerLinearFt": "18.74",
+      "sortOrder": "2",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    },
+    {
+      "id": "3",
+      "collectionSlug": "rainier",
+      "slug": "no-edge-rainier",
+      "name": "No Edge Finishing",
+      "pricePerLinearFt": "0.00",
+      "sortOrder": "3",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    },
+    {
+      "id": "6",
+      "collectionSlug": "appalachian",
+      "slug": "no-edge-app",
+      "name": "No Edge Finishing",
+      "pricePerLinearFt": "0.00",
+      "sortOrder": "3",
+      "isActive": "1",
+      "createdAt": "2026-03-03 14:16:16",
+      "updatedAt": "2026-03-03 14:16:16"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcollectionSlug\tslug\tname\tpricePerLinearFt\tsortOrder\tisActive\tcreatedAt\tupdatedAt\n1\trainier\tbullnose-standard\tStandard Bullnose Blocks\t24.98\t1\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n4\tappalachian\tstandard-edge-board\tStandard Edge Boards\t10.99\t1\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n2\trainier\taluminium-edge\tAluminium Edge Restraint\t5.00\t2\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n5\tappalachian\tcorner-edge-board\tCorner Edge Boards\t18.74\t2\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n3\trainier\tno-edge-rainier\tNo Edge Finishing\t0.00\t3\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n6\tappalachian\tno-edge-app\tNo Edge Finishing\t0.00\t3\t1\t2026-03-03 14:16:16\t2026-03-03 14:16:16\n",
+  "stderr": "",
+  "execution_time_ms": 441
+}

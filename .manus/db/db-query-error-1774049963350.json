@@ -1,0 +1,8 @@
+{
+  "query": "SELECT setting_key, setting_value, label FROM site_settings WHERE setting_key LIKE '%discount%' OR setting_key LIKE '%utah%' ORDER BY setting_key;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT setting_key, setting_value, label FROM site_settings WHERE setting_key LIKE '%discount%' OR setting_key LIKE '%utah%' ORDER BY setting_key;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'setting_key' in 'where clause'"
+  ]
+}

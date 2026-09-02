@@ -1,0 +1,29 @@
+{
+  "query": "SELECT * FROM rain_escape_options LIMIT 5; SELECT * FROM soffit_materials LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT * FROM rain_escape_options LIMIT 5; SELECT * FROM soffit_materials LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "standard",
+      "name": "Trex RainEscape + Concealed Gutter",
+      "description": "Complete under-deck drainage system using Trex RainEscape trough and bracket system with a concealed aluminum gutter.",
+      "gutterPricePerLinearFt": "18.00",
+      "systemPricePerSqft": "4.50",
+      "laborPricePerSqft": "3.50",
+      "sortOrder": "1",
+      "isActive": "1",
+      "createdAt": "2026-03-10 20:00:39",
+      "updatedAt": "2026-03-10 20:00:39"
+    }
+  ],
+  "messages": [
+    "id\tslug\tname\tdescription\tpricePerSqft\tlaborPricePerSqft\tsortOrder\tisActive\tcreatedAt\tupdatedAt",
+    "1\ttongue-groove-wood\tTongue & Groove Wood\tNatural cedar or pine T&G boards for a warm, classic soffit finish.\t6.50\t4.00\t1\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40",
+    "2\ttongue-groove-pvc\tTongue & Groove PVC\tLow-maintenance PVC T&G panels that mimic wood grain.\t7.25\t3.50\t2\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40",
+    "3\tstandard-aluminum\tStandard Aluminum Soffit\tVented aluminum soffit panels. Durable and cost-effective.\t4.75\t2.75\t3\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40",
+    "4\tpainted-cement-board\tPainted Cement Board\tFiber cement board soffit, primed and painted.\t8.00\t5.00\t4\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40"
+  ],
+  "stdout": "id\tslug\tname\tdescription\tgutterPricePerLinearFt\tsystemPricePerSqft\tlaborPricePerSqft\tsortOrder\tisActive\tcreatedAt\tupdatedAt\n1\tstandard\tTrex RainEscape + Concealed Gutter\tComplete under-deck drainage system using Trex RainEscape trough and bracket system with a concealed aluminum gutter.\t18.00\t4.50\t3.50\t1\t1\t2026-03-10 20:00:39\t2026-03-10 20:00:39\nid\tslug\tname\tdescription\tpricePerSqft\tlaborPricePerSqft\tsortOrder\tisActive\tcreatedAt\tupdatedAt\n1\ttongue-groove-wood\tTongue & Groove Wood\tNatural cedar or pine T&G boards for a warm, classic soffit finish.\t6.50\t4.00\t1\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40\n2\ttongue-groove-pvc\tTongue & Groove PVC\tLow-maintenance PVC T&G panels that mimic wood grain.\t7.25\t3.50\t2\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40\n3\tstandard-aluminum\tStandard Aluminum Soffit\tVented aluminum soffit panels. Durable and cost-effective.\t4.75\t2.75\t3\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40\n4\tpainted-cement-board\tPainted Cement Board\tFiber cement board soffit, primed and painted.\t8.00\t5.00\t4\t1\t2026-03-10 20:00:40\t2026-03-10 20:00:40\n",
+  "stderr": "",
+  "execution_time_ms": 397
+}

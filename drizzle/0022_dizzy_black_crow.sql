@@ -1,0 +1,1 @@
+ALTER TABLE `lumber_items` ADD `taxPercent` decimal(5,2) DEFAULT '8.35' NOT NULL;

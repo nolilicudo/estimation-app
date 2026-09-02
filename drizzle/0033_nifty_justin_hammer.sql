@@ -1,0 +1,1 @@
+ALTER TABLE `comparison_materials` ADD `showByDefault` int DEFAULT 0 NOT NULL;

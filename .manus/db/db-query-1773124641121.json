@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, slug, name, collectionSlug, pricePerLinearFt, isActive FROM edge_options ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, collectionSlug, pricePerLinearFt, isActive FROM edge_options ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "bullnose-standard",
+      "name": "Standard Bullnose Blocks",
+      "collectionSlug": "rainier",
+      "pricePerLinearFt": "24.98",
+      "isActive": "1"
+    },
+    {
+      "id": "4",
+      "slug": "standard-edge-board",
+      "name": "Standard Edge Boards",
+      "collectionSlug": "appalachian",
+      "pricePerLinearFt": "10.99",
+      "isActive": "1"
+    },
+    {
+      "id": "2",
+      "slug": "aluminium-edge",
+      "name": "Aluminium Edge Restraint",
+      "collectionSlug": "rainier",
+      "pricePerLinearFt": "5.00",
+      "isActive": "1"
+    },
+    {
+      "id": "5",
+      "slug": "corner-edge-board",
+      "name": "Corner Edge Boards",
+      "collectionSlug": "appalachian",
+      "pricePerLinearFt": "18.74",
+      "isActive": "1"
+    },
+    {
+      "id": "3",
+      "slug": "no-edge-rainier",
+      "name": "No Edge Finishing",
+      "collectionSlug": "rainier",
+      "pricePerLinearFt": "0.00",
+      "isActive": "1"
+    },
+    {
+      "id": "6",
+      "slug": "no-edge-app",
+      "name": "No Edge Finishing",
+      "collectionSlug": "appalachian",
+      "pricePerLinearFt": "0.00",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\tcollectionSlug\tpricePerLinearFt\tisActive\n1\tbullnose-standard\tStandard Bullnose Blocks\trainier\t24.98\t1\n4\tstandard-edge-board\tStandard Edge Boards\tappalachian\t10.99\t1\n2\taluminium-edge\tAluminium Edge Restraint\trainier\t5.00\t1\n5\tcorner-edge-board\tCorner Edge Boards\tappalachian\t18.74\t1\n3\tno-edge-rainier\tNo Edge Finishing\trainier\t0.00\t1\n6\tno-edge-app\tNo Edge Finishing\tappalachian\t0.00\t1\n",
+  "stderr": "",
+  "execution_time_ms": 379
+}

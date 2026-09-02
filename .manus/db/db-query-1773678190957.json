@@ -1,0 +1,9 @@
+{
+  "query": "\nINSERT INTO site_settings (settingKey, settingValue, label, description, category) VALUES\n  ('lift_threshold_1_depth_in', '10', 'Lift Threshold 1 — Beam Depth (in)', 'Beam depth (inches) at or above which 1 material lift is suggested', 'pricing'),\n  ('lift_threshold_2_depth_in', '14', 'Lift Threshold 2 — Beam Depth (in)', 'Beam depth (inches) at or above which a 2nd material lift is suggested', 'pricing'),\n  ('lift_cost_1', '450', 'Material Lift — 1 Lift Price ($)', 'Price charged for 1 material lift', 'pricing'),\n  ('lift_cost_2', '800', 'Material Lift — 2 Lifts Price ($)', 'Price charged for 2 material lifts (replaces lift_cost_1, not additive)', 'pricing')\nON DUPLICATE KEY UPDATE\n  settingValue = VALUES(settingValue),\n  label = VALUES(label),\n  description = VALUES(description);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (settingKey, settingValue, label, description, category) VALUES\n  ('lift_threshold_1_depth_in', '10', 'Lift Threshold 1 — Beam Depth (in)', 'Beam depth (inches) at or above which 1 material lift is suggested', 'pricing'),\n  ('lift_threshold_2_depth_in', '14', 'Lift Threshold 2 — Beam Depth (in)', 'Beam depth (inches) at or above which a 2nd material lift is suggested', 'pricing'),\n  ('lift_cost_1', '450', 'Material Lift — 1 Lift Price ($)', 'Price charged for 1 material lift', 'pricing'),\n  ('lift_cost_2', '800', 'Material Lift — 2 Lifts Price ($)', 'Price charged for 2 material lifts (replaces lift_cost_1, not additive)', 'pricing')\nON DUPLICATE KEY UPDATE\n  settingValue = VALUES(settingValue),\n  label = VALUES(label),\n  description = VALUES(description);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 393
+}

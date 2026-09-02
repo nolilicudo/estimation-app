@@ -1,0 +1,23 @@
+{
+  "query": "SELECT * FROM dp_feasibility_config;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT * FROM dp_feasibility_config;",
+  "rows": [
+    {
+      "id": "1",
+      "price": "1000.00",
+      "repCommission": "250.00",
+      "drafterCost": "500.00",
+      "description": "A feasibility study determines if your addition is structurally and legally viable before committing to a full design package. Includes a site visit, preliminary drawings, and a written report.",
+      "tags": "Zoning Review,Structural Assessment,Preliminary Drawings,Cost Validation",
+      "createdAt": "2026-05-12 23:00:34",
+      "updatedAt": "2026-05-15 03:03:40",
+      "name": "Standard Feasibility Study",
+      "sortOrder": "0",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tprice\trepCommission\tdrafterCost\tdescription\ttags\tcreatedAt\tupdatedAt\tname\tsortOrder\tisActive\n1\t1000.00\t250.00\t500.00\tA feasibility study determines if your addition is structurally and legally viable before committing to a full design package. Includes a site visit, preliminary drawings, and a written report.\tZoning Review,Structural Assessment,Preliminary Drawings,Cost Validation\t2026-05-12 23:00:34\t2026-05-15 03:03:40\tStandard Feasibility Study\t0\t1\n",
+  "stderr": "",
+  "execution_time_ms": 279
+}

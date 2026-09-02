@@ -1,0 +1,15 @@
+{
+  "query": "SELECT COUNT(*) as total_items, SUM(CASE WHEN homeDepotSku IS NOT NULL AND homeDepotSku != '' THEN 1 ELSE 0 END) as items_with_sku, SUM(CASE WHEN lastSyncedAt IS NOT NULL THEN 1 ELSE 0 END) as items_synced FROM lumber_items;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT COUNT(*) as total_items, SUM(CASE WHEN homeDepotSku IS NOT NULL AND homeDepotSku != '' THEN 1 ELSE 0 END) as items_with_sku, SUM(CASE WHEN lastSyncedAt IS NOT NULL THEN 1 ELSE 0 END) as items_synced FROM lumber_items;",
+  "rows": [
+    {
+      "total_items": "85",
+      "items_with_sku": "48",
+      "items_synced": "41"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_items\titems_with_sku\titems_synced\n85\t48\t41\n",
+  "stderr": "",
+  "execution_time_ms": 417
+}

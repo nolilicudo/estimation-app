@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, slug, name, system_price_per_sqft, gutter_price_per_linear_ft, labor_price_per_sqft FROM rain_escape_options; SELECT id, slug, name, price_per_sqft, labor_price_per_sqft FROM soffit_materials;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, system_price_per_sqft, gutter_price_per_linear_ft, labor_price_per_sqft FROM rain_escape_options; SELECT id, slug, name, price_per_sqft, labor_price_per_sqft FROM soffit_materials;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'system_price_per_sqft' in 'field list'"
+  ]
+}

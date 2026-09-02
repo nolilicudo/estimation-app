@@ -1,0 +1,73 @@
+{
+  "query": "SELECT settingKey, settingValue, label, description, category FROM site_settings WHERE category = 'pricing' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue, label, description, category FROM site_settings WHERE category = 'pricing' ORDER BY id;",
+  "rows": [
+    {
+      "settingKey": "tax_rate",
+      "settingValue": "0.0745",
+      "label": "Sales Tax Rate",
+      "description": "Utah sales tax rate (Orem)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "waste_factor_default",
+      "settingValue": "10",
+      "label": "Default Waste Factor (%)",
+      "description": "Default waste percentage for material estimates",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "permit_cost",
+      "settingValue": "250",
+      "label": "Permit Assistance Cost",
+      "description": "Cost for building permit assistance",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "show_itemized_pricing",
+      "settingValue": "0",
+      "label": "Show Itemized Pricing",
+      "description": "When enabled, the estimate shows a full line-item breakdown. When disabled, only the grand total is shown.",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_enabled",
+      "settingValue": "0",
+      "label": "Discount Enabled",
+      "description": "Toggle to show/hide the discount button on the estimate",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_name",
+      "settingValue": "Home Show Discount",
+      "label": "Discount Name",
+      "description": "The label shown on the estimate for this discount (e.g. \"Spring Promo\", \"Veteran Discount\")",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_type",
+      "settingValue": "percent",
+      "label": "Discount Type",
+      "description": "Type of discount: \"percent\" for percentage off, \"flat\" for a fixed dollar amount",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_amount",
+      "settingValue": "5",
+      "label": "Discount Amount",
+      "description": "Discount value: percentage (0-100) if type is \"percent\", or dollar amount if type is \"flat\"",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "show_pricing",
+      "settingValue": "1",
+      "label": "Show Pricing on Estimate",
+      "description": "When disabled, the estimate shows only a scope of work without any dollar amounts",
+      "category": "pricing"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\tlabel\tdescription\tcategory\ntax_rate\t0.0745\tSales Tax Rate\tUtah sales tax rate (Orem)\tpricing\nwaste_factor_default\t10\tDefault Waste Factor (%)\tDefault waste percentage for material estimates\tpricing\npermit_cost\t250\tPermit Assistance Cost\tCost for building permit assistance\tpricing\nshow_itemized_pricing\t0\tShow Itemized Pricing\tWhen enabled, the estimate shows a full line-item breakdown. When disabled, only the grand total is shown.\tpricing\ndiscount_enabled\t0\tDiscount Enabled\tToggle to show/hide the discount button on the estimate\tpricing\ndiscount_name\tHome Show Discount\tDiscount Name\tThe label shown on the estimate for this discount (e.g. \"Spring Promo\", \"Veteran Discount\")\tpricing\ndiscount_type\tpercent\tDiscount Type\tType of discount: \"percent\" for percentage off, \"flat\" for a fixed dollar amount\tpricing\ndiscount_amount\t5\tDiscount Amount\tDiscount value: percentage (0-100) if type is \"percent\", or dollar amount if type is \"flat\"\tpricing\nshow_pricing\t1\tShow Pricing on Estimate\tWhen disabled, the estimate shows only a scope of work without any dollar amounts\tpricing\n",
+  "stderr": "",
+  "execution_time_ms": 352
+}

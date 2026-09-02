@@ -1,0 +1,1 @@
+ALTER TABLE `joist_span_entries` MODIFY COLUMN `loadFactorMax` decimal(8,2) NOT NULL DEFAULT '9999.00';

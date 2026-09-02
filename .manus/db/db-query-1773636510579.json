@@ -1,0 +1,124 @@
+{
+  "query": "SELECT settingKey, settingValue, label, category FROM site_settings WHERE category = 'pricing' ORDER BY settingKey;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue, label, category FROM site_settings WHERE category = 'pricing' ORDER BY settingKey;",
+  "rows": [
+    {
+      "settingKey": "discount_amount",
+      "settingValue": "5",
+      "label": "Discount Amount",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_enabled",
+      "settingValue": "1",
+      "label": "Discount Enabled",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_name",
+      "settingValue": "Home Show Discount",
+      "label": "Discount Name",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "discount_type",
+      "settingValue": "percent",
+      "label": "Discount Type",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "engineer_letter_cost",
+      "settingValue": "400.00",
+      "label": "Engineer Letter Cost ($)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "permit_cost",
+      "settingValue": "250",
+      "label": "Permit Assistance Cost",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "permit_cost_framing",
+      "settingValue": "300.00",
+      "label": "Permit Cost When Framing ($)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "show_itemized_pricing",
+      "settingValue": "0",
+      "label": "Show Itemized Pricing",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "show_pricing",
+      "settingValue": "1",
+      "label": "Show Pricing on Estimate",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "stair_base_price",
+      "settingValue": "150.00",
+      "label": "Stair Base Price (per step, up to 4ft wide)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "stair_per_lf_over_4ft",
+      "settingValue": "37.50",
+      "label": "Stair Extra Price Per LF Over 4ft Wide",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "stair_riser_price",
+      "settingValue": "12.00",
+      "label": "Stair Riser Price (per linear ft)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "stair_tread_price",
+      "settingValue": "14.00",
+      "label": "Stair Tread Price (per sqft)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "subfloor_minimum",
+      "settingValue": "500.00",
+      "label": "Subfloor Minimum ($)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "subfloor_rate",
+      "settingValue": "8.00",
+      "label": "Subfloor Rate ($/sqft)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "subfloor_sheet_bonus",
+      "settingValue": "1",
+      "label": "Subfloor Bonus Sheets (>5)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "subfloor_sheet_price",
+      "settingValue": "35.00",
+      "label": "Subfloor Sheet Price ($)",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "tax_rate",
+      "settingValue": "0.0745",
+      "label": "Sales Tax Rate",
+      "category": "pricing"
+    },
+    {
+      "settingKey": "waste_factor_default",
+      "settingValue": "10",
+      "label": "Default Waste Factor (%)",
+      "category": "pricing"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\tlabel\tcategory\ndiscount_amount\t5\tDiscount Amount\tpricing\ndiscount_enabled\t1\tDiscount Enabled\tpricing\ndiscount_name\tHome Show Discount\tDiscount Name\tpricing\ndiscount_type\tpercent\tDiscount Type\tpricing\nengineer_letter_cost\t400.00\tEngineer Letter Cost ($)\tpricing\npermit_cost\t250\tPermit Assistance Cost\tpricing\npermit_cost_framing\t300.00\tPermit Cost When Framing ($)\tpricing\nshow_itemized_pricing\t0\tShow Itemized Pricing\tpricing\nshow_pricing\t1\tShow Pricing on Estimate\tpricing\nstair_base_price\t150.00\tStair Base Price (per step, up to 4ft wide)\tpricing\nstair_per_lf_over_4ft\t37.50\tStair Extra Price Per LF Over 4ft Wide\tpricing\nstair_riser_price\t12.00\tStair Riser Price (per linear ft)\tpricing\nstair_tread_price\t14.00\tStair Tread Price (per sqft)\tpricing\nsubfloor_minimum\t500.00\tSubfloor Minimum ($)\tpricing\nsubfloor_rate\t8.00\tSubfloor Rate ($/sqft)\tpricing\nsubfloor_sheet_bonus\t1\tSubfloor Bonus Sheets (>5)\tpricing\nsubfloor_sheet_price\t35.00\tSubfloor Sheet Price ($)\tpricing\ntax_rate\t0.0745\tSales Tax Rate\tpricing\nwaste_factor_default\t10\tDefault Waste Factor (%)\tpricing\n",
+  "stderr": "",
+  "execution_time_ms": 367
+}

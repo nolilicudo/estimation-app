@@ -1,0 +1,50 @@
+{
+  "query": "SELECT id, collectionSlug, slug, name, costPerLinearFt, marginPct, pricePerLinearFt, isActive FROM edge_options ORDER BY collectionSlug, sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, collectionSlug, slug, name, costPerLinearFt, marginPct, pricePerLinearFt, isActive FROM edge_options ORDER BY collectionSlug, sortOrder;",
+  "rows": [
+    {
+      "id": "4",
+      "collectionSlug": "appalachian",
+      "slug": "standard-edge-board",
+      "name": "Standard Edge Boards",
+      "costPerLinearFt": "0.00",
+      "marginPct": "35.00",
+      "pricePerLinearFt": "10.99",
+      "isActive": "1"
+    },
+    {
+      "id": "5",
+      "collectionSlug": "appalachian",
+      "slug": "corner-edge-board",
+      "name": "Corner Edge Boards",
+      "costPerLinearFt": "0.00",
+      "marginPct": "35.00",
+      "pricePerLinearFt": "18.74",
+      "isActive": "0"
+    },
+    {
+      "id": "1",
+      "collectionSlug": "rainier",
+      "slug": "bullnose-standard",
+      "name": "Standard Bullnose Blocks",
+      "costPerLinearFt": "0.00",
+      "marginPct": "35.00",
+      "pricePerLinearFt": "24.98",
+      "isActive": "0"
+    },
+    {
+      "id": "2",
+      "collectionSlug": "rainier",
+      "slug": "aluminium-edge",
+      "name": "Aluminium Edge Restraint",
+      "costPerLinearFt": "0.00",
+      "marginPct": "35.00",
+      "pricePerLinearFt": "5.00",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcollectionSlug\tslug\tname\tcostPerLinearFt\tmarginPct\tpricePerLinearFt\tisActive\n4\tappalachian\tstandard-edge-board\tStandard Edge Boards\t0.00\t35.00\t10.99\t1\n5\tappalachian\tcorner-edge-board\tCorner Edge Boards\t0.00\t35.00\t18.74\t0\n1\trainier\tbullnose-standard\tStandard Bullnose Blocks\t0.00\t35.00\t24.98\t0\n2\trainier\taluminium-edge\tAluminium Edge Restraint\t0.00\t35.00\t5.00\t1\n",
+  "stderr": "",
+  "execution_time_ms": 392
+}

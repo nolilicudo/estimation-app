@@ -1,0 +1,9 @@
+{
+  "query": "\nSELECT 'colors' as tbl, slug, COUNT(*) as cnt FROM colors GROUP BY slug HAVING cnt > 1\nUNION ALL\nSELECT 'labor_tiers', slug, COUNT(*) FROM labor_tiers GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'delivery_options', slug, COUNT(*) FROM delivery_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'edge_options', slug, COUNT(*) FROM edge_options GROUP BY slug HAVING COUNT(*) > 1;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nSELECT 'colors' as tbl, slug, COUNT(*) as cnt FROM colors GROUP BY slug HAVING cnt > 1\nUNION ALL\nSELECT 'labor_tiers', slug, COUNT(*) FROM labor_tiers GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'delivery_options', slug, COUNT(*) FROM delivery_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'edge_options', slug, COUNT(*) FROM edge_options GROUP BY slug HAVING COUNT(*) > 1;\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 376
+}

@@ -1,0 +1,46 @@
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import NotFound from "@/pages/NotFound";
+import { Route, Switch } from "wouter";
+import ErrorBoundary from "./components/ErrorBoundary";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import Home from "./pages/Home";
+import Admin from "./pages/Admin";
+import DesignPackageAdmin from "./pages/DesignPackageAdmin";
+import OrderSuccess from "./pages/OrderSuccess";
+import ContractSign from "./pages/ContractSign";
+import Questionnaire from "./pages/Questionnaire";
+import DynamicQuestionnaire from "./pages/DynamicQuestionnaire";
+
+function Router() {
+  return (
+    <Switch>
+      <Route path={"/"} component={Home} />
+      <Route path={"/admin"} component={Admin} />
+      <Route path={"/admin-dp"} component={DesignPackageAdmin} />
+      <Route path={"/order-success"} component={OrderSuccess} />
+      <Route path={"/sign/:token"} component={ContractSign} />
+      <Route path={"/questionnaire/:token"} component={Questionnaire} />
+      <Route path={"/q/:token"} component={DynamicQuestionnaire} />
+      <Route path={"/404"} component={NotFound} />
+      <Route component={NotFound} />
+    </Switch>
+  );
+}
+
+function App() {
+  return (
+    <ErrorBoundary>
+      <ThemeProvider
+        defaultTheme="light"
+      >
+        <TooltipProvider>
+          <Toaster />
+          <Router />
+        </TooltipProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
+  );
+}
+
+export default App;

@@ -1,0 +1,1 @@
+ALTER TABLE `initial_consult_settings` ADD `lender_email` varchar(255) DEFAULT 'ODonnellTeam@ccm.com';

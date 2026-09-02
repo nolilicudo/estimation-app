@@ -1,0 +1,8 @@
+{
+  "query": "\nINSERT INTO site_settings (settingKey, settingValue, label, description, category, sortOrder)\nVALUES\n  ('subfloor_rate', '8.00', 'Subfloor Rate ($/sqft)', 'Per-sqft cost of subfloor added automatically for Rainier collection projects', 'pricing', 90),\n  ('subfloor_minimum', '500.00', 'Subfloor Minimum ($)', 'Minimum charge for subfloor on Rainier projects (0 = no minimum)', 'pricing', 91)\nON DUPLICATE KEY UPDATE\n  label = VALUES(label),\n  description = VALUES(description),\n  category = VALUES(category),\n  sortOrder = VALUES(sortOrder);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nINSERT INTO site_settings (settingKey, settingValue, label, description, category, sortOrder)\nVALUES\n  ('subfloor_rate', '8.00', 'Subfloor Rate ($/sqft)', 'Per-sqft cost of subfloor added automatically for Rainier collection projects', 'pricing', 90),\n  ('subfloor_minimum', '500.00', 'Subfloor Minimum ($)', 'Minimum charge for subfloor on Rainier projects (0 = no minimum)', 'pricing', 91)\nON DUPLICATE KEY UPDATE\n  label = VALUES(label),\n  description = VALUES(description),\n  category = VALUES(category),\n  sortOrder = VALUES(sortOrder);\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'sortOrder' in 'field list'"
+  ]
+}

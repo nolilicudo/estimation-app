@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE site_settings SET category = 'subfloor' WHERE settingKey IN ('subfloor_minimum', 'subfloor_rate', 'subfloor_sheet_bonus', 'subfloor_sheet_price');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute UPDATE site_settings SET category = 'subfloor' WHERE settingKey IN ('subfloor_minimum', 'subfloor_rate', 'subfloor_sheet_bonus', 'subfloor_sheet_price');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 460
+}

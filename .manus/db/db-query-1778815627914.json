@@ -1,0 +1,14 @@
+{
+  "query": "SELECT settingKey, settingValue FROM site_settings WHERE settingKey = 'calculator_pin';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT settingKey, settingValue FROM site_settings WHERE settingKey = 'calculator_pin';",
+  "rows": [
+    {
+      "settingKey": "calculator_pin",
+      "settingValue": "1476"
+    }
+  ],
+  "messages": [],
+  "stdout": "settingKey\tsettingValue\ncalculator_pin\t1476\n",
+  "stderr": "",
+  "execution_time_ms": 273
+}

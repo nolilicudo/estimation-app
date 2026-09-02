@@ -1,0 +1,73 @@
+{
+  "query": "SELECT * FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%stair%' OR settingKey LIKE '%engineer%' OR settingKey LIKE '%permit%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT * FROM site_settings WHERE settingKey LIKE '%subfloor%' OR settingKey LIKE '%stair%' OR settingKey LIKE '%engineer%' OR settingKey LIKE '%permit%'",
+  "rows": [
+    {
+      "id": "3",
+      "settingKey": "stair_tread_price",
+      "settingValue": "14.00",
+      "label": "Stair Tread Price (per sqft)",
+      "description": "Price per square foot for stair treads",
+      "category": "pricing",
+      "updatedAt": "2026-03-03 14:16:17"
+    },
+    {
+      "id": "4",
+      "settingKey": "stair_riser_price",
+      "settingValue": "12.00",
+      "label": "Stair Riser Price (per linear ft)",
+      "description": "Price per linear foot for stair risers",
+      "category": "pricing",
+      "updatedAt": "2026-03-03 14:16:18"
+    },
+    {
+      "id": "5",
+      "settingKey": "permit_cost",
+      "settingValue": "250",
+      "label": "Permit Assistance Cost",
+      "description": "Cost for building permit assistance",
+      "category": "pricing",
+      "updatedAt": "2026-03-10 23:57:48"
+    },
+    {
+      "id": "150001",
+      "settingKey": "subfloor_rate",
+      "settingValue": "8.00",
+      "label": "Subfloor Rate ($/sqft)",
+      "description": "Per-sqft cost of subfloor added automatically for Rainier collection projects",
+      "category": "pricing",
+      "updatedAt": "2026-03-15 09:54:43"
+    },
+    {
+      "id": "150002",
+      "settingKey": "subfloor_minimum",
+      "settingValue": "500.00",
+      "label": "Subfloor Minimum ($)",
+      "description": "Minimum charge for subfloor on Rainier projects (0 = no minimum)",
+      "category": "pricing",
+      "updatedAt": "2026-03-15 09:54:43"
+    },
+    {
+      "id": "180001",
+      "settingKey": "subfloor_sheet_price",
+      "settingValue": "45.00",
+      "label": "Subfloor Sheet Price ($)",
+      "description": "Price per sheet of subfloor material (4×8 sheet = 32 sqft). Cost = sheets × price.",
+      "category": "pricing",
+      "updatedAt": "2026-03-15 11:23:01"
+    },
+    {
+      "id": "180002",
+      "settingKey": "subfloor_sheet_bonus",
+      "settingValue": "1",
+      "label": "Subfloor Bonus Sheets (>5)",
+      "description": "Extra sheets added when total sheets exceed 5 (accounts for cuts/waste on larger decks).",
+      "category": "pricing",
+      "updatedAt": "2026-03-15 11:23:01"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsettingKey\tsettingValue\tlabel\tdescription\tcategory\tupdatedAt\n3\tstair_tread_price\t14.00\tStair Tread Price (per sqft)\tPrice per square foot for stair treads\tpricing\t2026-03-03 14:16:17\n4\tstair_riser_price\t12.00\tStair Riser Price (per linear ft)\tPrice per linear foot for stair risers\tpricing\t2026-03-03 14:16:18\n5\tpermit_cost\t250\tPermit Assistance Cost\tCost for building permit assistance\tpricing\t2026-03-10 23:57:48\n150001\tsubfloor_rate\t8.00\tSubfloor Rate ($/sqft)\tPer-sqft cost of subfloor added automatically for Rainier collection projects\tpricing\t2026-03-15 09:54:43\n150002\tsubfloor_minimum\t500.00\tSubfloor Minimum ($)\tMinimum charge for subfloor on Rainier projects (0 = no minimum)\tpricing\t2026-03-15 09:54:43\n180001\tsubfloor_sheet_price\t45.00\tSubfloor Sheet Price ($)\tPrice per sheet of subfloor material (4×8 sheet = 32 sqft). Cost = sheets × price.\tpricing\t2026-03-15 11:23:01\n180002\tsubfloor_sheet_bonus\t1\tSubfloor Bonus Sheets (>5)\tExtra sheets added when total sheets exceed 5 (accounts for cuts/waste on larger decks).\tpricing\t2026-03-15 11:23:01\n",
+  "stderr": "",
+  "execution_time_ms": 351
+}

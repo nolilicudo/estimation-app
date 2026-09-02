@@ -1,0 +1,135 @@
+{
+  "query": "\nSELECT 'colors' as tbl, slug, COUNT(*) as cnt FROM colors GROUP BY slug HAVING cnt > 1\nUNION ALL\nSELECT 'labor_tiers', slug, COUNT(*) FROM labor_tiers GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'delivery_options', slug, COUNT(*) FROM delivery_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'edge_options', slug, COUNT(*) FROM edge_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'comparison_materials', slug, COUNT(*) FROM comparison_materials GROUP BY slug HAVING COUNT(*) > 1;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute \nSELECT 'colors' as tbl, slug, COUNT(*) as cnt FROM colors GROUP BY slug HAVING cnt > 1\nUNION ALL\nSELECT 'labor_tiers', slug, COUNT(*) FROM labor_tiers GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'delivery_options', slug, COUNT(*) FROM delivery_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'edge_options', slug, COUNT(*) FROM edge_options GROUP BY slug HAVING COUNT(*) > 1\nUNION ALL\nSELECT 'comparison_materials', slug, COUNT(*) FROM comparison_materials GROUP BY slug HAVING COUNT(*) > 1;\n",
+  "rows": [
+    {
+      "tbl": "colors",
+      "slug": "american-walnut",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "white-ash",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "driftwood",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "sierra-grey",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "driftwood-app",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "aged-teak-app",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "silver-maple",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "aged-teak",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "travertine",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "canyon-brown",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "slate-black",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "american-walnut-app",
+      "cnt": "2"
+    },
+    {
+      "tbl": "colors",
+      "slug": "carrara-marble",
+      "cnt": "2"
+    },
+    {
+      "tbl": "labor_tiers",
+      "slug": "premium",
+      "cnt": "2"
+    },
+    {
+      "tbl": "labor_tiers",
+      "slug": "materials-only",
+      "cnt": "2"
+    },
+    {
+      "tbl": "labor_tiers",
+      "slug": "basic",
+      "cnt": "2"
+    },
+    {
+      "tbl": "labor_tiers",
+      "slug": "standard",
+      "cnt": "2"
+    },
+    {
+      "tbl": "delivery_options",
+      "slug": "local",
+      "cnt": "2"
+    },
+    {
+      "tbl": "delivery_options",
+      "slug": "pickup",
+      "cnt": "2"
+    },
+    {
+      "tbl": "delivery_options",
+      "slug": "statewide",
+      "cnt": "2"
+    },
+    {
+      "tbl": "delivery_options",
+      "slug": "wasatch",
+      "cnt": "2"
+    },
+    {
+      "tbl": "edge_options",
+      "slug": "bullnose-standard",
+      "cnt": "2"
+    },
+    {
+      "tbl": "edge_options",
+      "slug": "aluminium-edge",
+      "cnt": "2"
+    },
+    {
+      "tbl": "edge_options",
+      "slug": "standard-edge-board",
+      "cnt": "2"
+    },
+    {
+      "tbl": "edge_options",
+      "slug": "corner-edge-board",
+      "cnt": "2"
+    }
+  ],
+  "messages": [],
+  "stdout": "tbl\tslug\tcnt\ncolors\tamerican-walnut\t2\ncolors\twhite-ash\t2\ncolors\tdriftwood\t2\ncolors\tsierra-grey\t2\ncolors\tdriftwood-app\t2\ncolors\taged-teak-app\t2\ncolors\tsilver-maple\t2\ncolors\taged-teak\t2\ncolors\ttravertine\t2\ncolors\tcanyon-brown\t2\ncolors\tslate-black\t2\ncolors\tamerican-walnut-app\t2\ncolors\tcarrara-marble\t2\nlabor_tiers\tpremium\t2\nlabor_tiers\tmaterials-only\t2\nlabor_tiers\tbasic\t2\nlabor_tiers\tstandard\t2\ndelivery_options\tlocal\t2\ndelivery_options\tpickup\t2\ndelivery_options\tstatewide\t2\ndelivery_options\twasatch\t2\nedge_options\tbullnose-standard\t2\nedge_options\taluminium-edge\t2\nedge_options\tstandard-edge-board\t2\nedge_options\tcorner-edge-board\t2\n",
+  "stderr": "",
+  "execution_time_ms": 467
+}

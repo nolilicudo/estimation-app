@@ -1,0 +1,1 @@
+ALTER TABLE `sign_requests` ADD `photoUrls` json;

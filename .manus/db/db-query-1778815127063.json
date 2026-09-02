@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, name, designHours FROM design_package_items WHERE pricingType = 'rendering';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, name, designHours FROM design_package_items WHERE pricingType = 'rendering';",
+  "rows": [
+    {
+      "id": "10",
+      "name": "3D Rendering — Small Bathroom",
+      "designHours": "8.00"
+    },
+    {
+      "id": "11",
+      "name": "3D Rendering — Large Bathroom / Living Room",
+      "designHours": "8.00"
+    },
+    {
+      "id": "12",
+      "name": "3D Rendering — Kitchen",
+      "designHours": "8.00"
+    },
+    {
+      "id": "13",
+      "name": "3D Rendering — Exterior",
+      "designHours": "8.00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tdesignHours\n10\t3D Rendering — Small Bathroom\t8.00\n11\t3D Rendering — Large Bathroom / Living Room\t8.00\n12\t3D Rendering — Kitchen\t8.00\n13\t3D Rendering — Exterior\t8.00\n",
+  "stderr": "",
+  "execution_time_ms": 272
+}

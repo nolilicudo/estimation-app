@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, slug, name, collection, pricePerLinearFt, isActive FROM edge_options ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, collection, pricePerLinearFt, isActive FROM edge_options ORDER BY sortOrder;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'collection' in 'field list'"
+  ]
+}

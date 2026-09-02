@@ -1,0 +1,108 @@
+{
+  "query": "SELECT id, slug, name, unit, isOptional FROM accessories ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Q64nQyfEJv324i.555e58c143ab --database CCcDY8JrM76jeYgqBkzZHs --execute SELECT id, slug, name, unit, isOptional FROM accessories ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "30001",
+      "slug": "grooved-clips",
+      "name": "Grooved Clips & Fasteners",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "1",
+      "slug": "grooved-clips",
+      "name": "Grooved Clips & Fasteners",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "2",
+      "slug": "starter-clip",
+      "name": "Starter Clip & Fastener",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "30002",
+      "slug": "starter-clip",
+      "name": "Starter Clip & Fastener",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "3",
+      "slug": "edge-clip",
+      "name": "Edge Clip & Fastener",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "30003",
+      "slug": "edge-clip",
+      "name": "Edge Clip & Fastener",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "4",
+      "slug": "joist-tape",
+      "name": "Joist Tape",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "30004",
+      "slug": "joist-tape",
+      "name": "Joist Tape",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "5",
+      "slug": "epdm-membrane",
+      "name": "EPDM Membrane",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "30005",
+      "slug": "epdm-membrane",
+      "name": "EPDM Membrane",
+      "unit": "sqft",
+      "isOptional": "0"
+    },
+    {
+      "id": "6",
+      "slug": "diamond-blade",
+      "name": "Diamond Blade",
+      "unit": "each",
+      "isOptional": "1"
+    },
+    {
+      "id": "30006",
+      "slug": "diamond-blade",
+      "name": "Diamond Blade",
+      "unit": "each",
+      "isOptional": "1"
+    },
+    {
+      "id": "7",
+      "slug": "sanding-pad",
+      "name": "Stone Sanding Pad",
+      "unit": "each",
+      "isOptional": "1"
+    },
+    {
+      "id": "30007",
+      "slug": "sanding-pad",
+      "name": "Stone Sanding Pad",
+      "unit": "each",
+      "isOptional": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\tunit\tisOptional\n30001\tgrooved-clips\tGrooved Clips & Fasteners\tsqft\t0\n1\tgrooved-clips\tGrooved Clips & Fasteners\tsqft\t0\n2\tstarter-clip\tStarter Clip & Fastener\tsqft\t0\n30002\tstarter-clip\tStarter Clip & Fastener\tsqft\t0\n3\tedge-clip\tEdge Clip & Fastener\tsqft\t0\n30003\tedge-clip\tEdge Clip & Fastener\tsqft\t0\n4\tjoist-tape\tJoist Tape\tsqft\t0\n30004\tjoist-tape\tJoist Tape\tsqft\t0\n5\tepdm-membrane\tEPDM Membrane\tsqft\t0\n30005\tepdm-membrane\tEPDM Membrane\tsqft\t0\n6\tdiamond-blade\tDiamond Blade\teach\t1\n30006\tdiamond-blade\tDiamond Blade\teach\t1\n7\tsanding-pad\tStone Sanding Pad\teach\t1\n30007\tsanding-pad\tStone Sanding Pad\teach\t1\n",
+  "stderr": "",
+  "execution_time_ms": 531
+}
