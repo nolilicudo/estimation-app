@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: estimation-app
+    env: node
+    buildCommand: corepack enable pnpm && pnpm install && pnpm run build
+    startCommand: pnpm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: DATABASE_URL
+        sync: false
