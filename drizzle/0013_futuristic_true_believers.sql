@@ -19,7 +19,7 @@ CREATE TABLE `joist_span_entries` (
 	`spacingIn` int NOT NULL DEFAULT 16,
 	`maxSpanFt` decimal(5,2) NOT NULL,
 	`loadFactorMin` decimal(5,2) NOT NULL DEFAULT '0.00',
-	`loadFactorMax` decimal(5,2) NOT NULL DEFAULT '9999.00',
+	`loadFactorMax` decimal(8,2) NOT NULL DEFAULT '9999.00',
 	`notes` varchar(256),
 	`sortOrder` int NOT NULL DEFAULT 0,
 	`isActive` int NOT NULL DEFAULT 1,

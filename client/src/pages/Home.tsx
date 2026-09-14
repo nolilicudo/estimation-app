@@ -256,7 +256,7 @@ export default function Home() {
                   selectionLabel={calc.currentColor?.name}
                 >
                   <ColorPicker
-                    colors={calc.currentCollection.colors}
+                    colors={calc.currentCollection?.colors ?? []}
                     selectedColor={calc.state.selectedColor}
                     onChange={(v) => calc.updateField("selectedColor", v)}
                   />
@@ -586,7 +586,7 @@ export default function Home() {
                     <CostSummary
                       breakdown={displayBreakdown}
                       collection={calc.currentCollection}
-                      color={calc.currentColor ?? calc.currentCollection?.colors[0]!}
+                      color={calc.currentColor ?? calc.currentCollection?.colors?.[0]}
                       labor={calc.currentLabor}
                       delivery={calc.currentDelivery}
                       sqft={calc.state.totalSqft}
@@ -659,7 +659,7 @@ export default function Home() {
               pricePerSqft={displayBreakdown.pricePerSqft}
               breakdown={displayBreakdown}
               collection={calc.currentCollection}
-              color={calc.currentColor ?? calc.currentCollection?.colors[0]!}
+              color={calc.currentColor ?? calc.currentCollection?.colors?.[0]}
               labor={calc.currentLabor}
               delivery={calc.currentDelivery}
               sqft={calc.state.totalSqft}
