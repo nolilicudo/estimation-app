@@ -5,8 +5,16 @@ export const ENV = {
   get oAuthServerUrl() { return process.env.OAUTH_SERVER_URL ?? ""; },
   get ownerOpenId() { return process.env.OWNER_OPEN_ID ?? ""; },
   get isProduction() { return process.env.NODE_ENV === "production"; },
+  // Manus Forge API — used by notification.ts, voiceTranscription.ts, imageGeneration.ts
   get forgeApiUrl() { return process.env.BUILT_IN_FORGE_API_URL ?? ""; },
   get forgeApiKey() { return process.env.BUILT_IN_FORGE_API_KEY ?? ""; },
+  // Cloudflare R2 storage
+  get r2AccountId() { return process.env.R2_ACCOUNT_ID ?? ""; },
+  get r2AccessKeyId() { return process.env.R2_ACCESS_KEY_ID ?? ""; },
+  get r2SecretAccessKey() { return process.env.R2_SECRET_ACCESS_KEY ?? ""; },
+  get r2BucketName() { return process.env.R2_BUCKET_NAME ?? "estimation-app"; },
+  /** Optional: public domain for the R2 bucket (e.g. https://pub-xxx.r2.dev) */
+  get r2PublicUrl() { return process.env.R2_PUBLIC_URL ?? ""; },
   // Zapier webhook for email estimate (legacy)
   get zapierWebhookUrl() { return process.env.ZAPIER_WEBHOOK_URL ?? ""; },
   // Zapier webhook for pre-approval referral emails
